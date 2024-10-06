@@ -1,0 +1,51 @@
+[
+  {
+    "id_venta": 1,
+    "fecha": "8/10/2024",
+    "id_cliente": 1,
+    "total": 314000,
+    "metodo_pago": 2
+  },
+  {
+    "id_venta": 2,
+    "fecha": "8/10/2024",
+    "id_cliente": 18,
+    "total": 1250000,
+    "metodo_pago": 4
+  },
+  {
+    "id_venta": 3,
+    "fecha": "8/15/2024",
+    "id_cliente": 11,
+    "total": 2780000,
+    "metodo_pago": 2
+  },
+  {
+    "id_venta": 4,
+    "fecha": "8/18/2024",
+    "id_cliente": 6,
+    "total": 170000,
+    "metodo_pago": 3
+  },
+  {
+    "id_venta": 5,
+    "fecha": "8/31/2024",
+    "id_cliente": 19,
+    "total": 1415000,
+    "metodo_pago": 1
+  },
+  {
+    "id_venta": 6,
+    "fecha": "10/4/2024",
+    "id_cliente": 18,
+    "total": 111000,
+    "metodo_pago": 1
+  },
+  {
+    "id_venta": 7,
+    "fecha": "10/4/2024",
+    "id_cliente": 11,
+    "total": 151000,
+    "metodo_pago": 2
+  }
+]

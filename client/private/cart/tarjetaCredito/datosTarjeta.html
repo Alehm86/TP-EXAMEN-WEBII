@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../../style/style_cardFrm.css">
+    <title>Carrito</title>
+</head>
+<body>
+    
+    <div class="container" id="contenedor-nav">
+       
+        <aside>
+
+            <header>
+                <h1 class="logo">CBATECH!</h1>
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a id="nomUsu"></a>
+                
+                <nav class="navbar">                   
+                    <a id="btnLogout" >Logout <i class="bi bi-box-arrow-in-left"></i></a>                         
+                </nav>
+            </header>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="http://localhost:3006/private/home/" class="boton-categoria boton-menu" style="font-size: x-large;" >Tienda <i class="bi bi-shop-window"></i></a>
+                    </li>                     
+                </ul>
+            </nav>
+
+            <footer class="text-footer">
+                <h6>@2024 Alejandro Martín</h3>
+            </footer>
+
+        </aside>
+
+        <div class="carro">
+            <main>     
+                <a href="http://localhost:3006/private/cart/carrito/carrito.html">
+                    <button class="btnVolver"><i class="bi bi-arrow-90deg-left"> Volver </i></button> 
+                </a>                    
+                    <div class="formTarjetas">
+                        <section class="superiorCard">
+
+                            <div class="frente">
+                                <p class="frenteCredito">Credito</p>
+                                <img src="./img/chip.jpg" alt="" class="imgChip">
+                                <p class="frenteNumero" id="cardNumero">0000 0000 0000 0000</p>
+                                <div class="frenteNomVenc">
+                                    <p class="cardNombre">M. Molina</p>
+                                    <p><span class="cardMes">00</span>/<span class="cardYear">0000</span></p>
+                                </div>
+                            </div>
+
+                            <div class="dorso">
+                                <p class="dorsoCodigo" id="cardCodigo">000</p>
+                            </div>
+                           
+                        </section>
+
+                        <section class="inferiorCard">
+                            <div class="formPagoTarjeta">   
+                                <input id="inpNumero" class="inputCard" type="text" placeholder="Numero de tarjeta" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="19" required>
+                                <input id="inpNombre" class="inputCard" type="text" placeholder="Nombre del titular" maxlength="19" required>
+                                <div class="fechaVenc">
+                                    <h1>Fecha de vencimiento / codigo de verificación</h1>                               
+                                    <div class="inputFechaCard">
+                                        <input id="inpMes" class="inputCardFecha" type="text" placeholder="mes" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="2" required>
+                                        <input id="inpYear" class="inputCardFecha" type="text" placeholder="año" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" required> 
+                                        <input id="inpCodigo" class="inputCard" type="text" placeholder="Codigo dorso" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="3" required>                                  
+                                    </div>
+                                </div>                               
+                                <a href="http://localhost:3006/private/cart/tarjetaCredito/opcionCuotas.html">
+                                    <button class="btnCard" id="btnCard">Continuar</button>
+                                </a>
+                            </div>
+
+                        </section>
+                    </div>
+                    
+                    
+            </main>
+        </div>
+        
+        
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../../../api/usuario.api.js"></script>
+    <script type="module" src="./datosTarjeta.js"></script>
+    <script type="module" src="/private/controller/sessionStorage.Logout.js"></script>
+    
+</body>
+</html>

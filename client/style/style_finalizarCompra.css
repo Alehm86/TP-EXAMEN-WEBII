@@ -1,0 +1,79 @@
+@import url('/style/style_principal.css');
+@import url('/style/style_home.css');
+@import url('/style/style_cardFrm.css');
+
+main{
+    background-color: rgba(255, 255, 255, 0.212);
+    height: 80rem;
+}
+
+.finCompra{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carro{
+    background-color: transparent;  
+}
+
+.datosDeCompra{
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    gap: 1rem;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    color: var(--clr-claro);  
+}
+
+.datos2{
+    width: 100%;
+}
+.carritoProducto{
+    background-color: rgba(128, 128, 128, 0.26);
+}
+
+.tarjeta, .datosPersonales, .datosDir{
+    display: flex;
+}
+
+.btnVolFin{
+    margin-bottom: 2rem;
+}
+
+.align2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btnFin{
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: x-large;
+    color: var(--clr-claro);
+    background-color: rgba(172, 255, 47, 0.493);    
+}
+
+.btnFin:hover{
+    background-color: var(--clr-gold);
+    color: var(--clr-principal);
+}
+
+.mensaje{
+    align-items: center;
+    font-size: 5rem;
+    margin-top: 20rem;
+    color: var(--clr-gold);
+ 
+}

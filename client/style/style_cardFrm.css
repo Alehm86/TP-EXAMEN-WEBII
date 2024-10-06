@@ -1,0 +1,184 @@
+@import url('./style_home.css');
+@import url('./style_principal.css');
+@import url('./style_cardCuotas.css');
+
+
+.carro{
+    background-color: transparent;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.212);
+    height: 100%;
+}
+
+.formTarjetas{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 45rem;
+    align-items: center;
+}
+
+.superiorCard{
+    
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.frente{
+    border-radius: .5rem;
+    background-image: url(/private/cart/tarjetaCredito/img/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10rem;
+    width: 20rem;
+}
+
+.frenteNumero{
+    margin-top: 7px;
+    padding: .5rem;
+}
+
+.frenteNomVenc{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+    padding: .5rem;
+    width: 280px;
+}
+
+.frenteCredito{
+    margin-top: 10px;
+    padding: .5rem;
+    font-family: "Poppins", sans-serif;
+    color: silver;
+}
+
+.imgChip{
+    height: 28px;
+    width: 35px;
+    border-radius: .35rem;
+    margin-left: 12px;
+}
+
+.dorso{
+    border-radius: .5rem;
+    background-image: url(/private/cart/tarjetaCredito/img/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10rem;
+    width: 20rem;
+}
+
+.dorsoCodigo{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 4.5rem;
+    margin-right: 1rem;
+    margin-left: 14rem;
+    color: black;  
+}
+
+.inferiorCard{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.formPagoTarjeta{  
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 22rem;
+    padding: 15px;
+    gap: 15px
+    
+}
+
+.fechaVenc{
+    display: grid;
+    gap: .5px;
+}
+
+.inputCard{
+    background-color: rgba(255, 255, 255, 0.603);
+    height: 50px;
+    border-radius: 1rem;
+    color: black;
+    border: solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    border: none;
+}
+
+.inputCardFecha{
+    background-color: rgba(255, 255, 255, 0.603);
+    height: 50px;
+    border-radius: 1rem;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.inputFechaCard{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    
+}
+
+.btnCard{
+    background-color: var(--clr-btnAgregar);
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    border-radius: 1rem;
+    color: black;
+    border: solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btnCard:hover{
+    background-color: var(--clr-verde);
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.658);
+    font-size: small;
+}
+
+p, span{
+    color: silver;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.cardNombre, .inputCard, .datosTarjeta{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+

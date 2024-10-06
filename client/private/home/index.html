@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../style/style_home.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="container" id="contenedor-nav">
+       
+        <aside>
+
+            <header>
+                <h1 class="logo">CBATECH!</h1>
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a id="nomUsu"></a> 
+                
+                <nav class="navbar">                                   
+                    <a id="btnLogout" >Logout <i class="bi bi-box-arrow-in-left"></i></a>  
+                    <div>
+                        <a href="http://localhost:3006/private/cart/carrito/carrito.html" style="color: orange;"  >Carrito <i class="bi bi-cart"></i>
+                            <span id="objEnCarrito" class="numerito" ></span>
+                        </a>                  
+                    </div>                                   
+                </nav>
+                
+            </header>
+
+            <nav>
+                <ul class="menu">
+
+                    <li>
+                        <button id="todos" class="boton-categoria boton-menu active">Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="note" class="boton-categoria boton-menu">Notebooks <i class="bi bi-laptop"></i></button>    
+                    </li>
+                    <li>
+                        <button id="comp" class="boton-categoria boton-menu">Componentes <i class="bi bi-motherboard"></i></button>    
+                    </li>
+                    <li>
+                        <button id="cel" class="boton-categoria boton-menu">Celulares <i class="bi bi-phone"></i></button>
+                    </li>
+                    <li>
+                        
+                    </li>
+                                        
+                </ul>
+            </nav>
+
+            <footer class="text-footer">
+                <h6>@2024 Alejandro Martín</h6>
+            </footer>
+
+        </aside>
+
+        <div>
+            <main>                         
+                <div class="contenedor-productos" id="contenedor-productos">   
+                </div>
+            </main>
+        </div>
+        
+        
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../../api/usuario.api.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="../controller/sessionStorage.Logout.js"></script>
+    
+
+</body>
+</html>

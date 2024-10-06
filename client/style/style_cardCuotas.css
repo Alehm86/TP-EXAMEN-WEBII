@@ -1,0 +1,92 @@
+@import url('./style_cardFrm.css');
+@import url('./style_principal.css');
+
+label{
+    color: var(--clr-claro);
+}
+
+main{
+    width: 100%;
+    height: 100%;   
+}
+.cuerpo{
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 60rem;
+    margin: auto;
+    margin-top: 6rem;
+    gap: 1rem;   
+}
+
+.filaOpc{
+    display: flex;
+    border: solid 1px transparent;
+    border-radius: .5rem;
+    background-color: var(--clr-grisTransp);
+    margin-top: 5px;
+    height: 2.5rem;
+    width: 58rem;
+}
+
+.opcion{
+    display: flex;
+    justify-content: space-between; 
+    width: 95%;
+    margin-left: 10px;    
+}
+
+.montoPagar{
+    margin-bottom: 20px;
+}
+
+.btnSiguiente{
+    background-color: var(--clr-btnAgregar);
+    border: solid 1px whitesmoke; 
+    color: var(--clr-principal);
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+    font-size: large;
+    margin-top: 3rem;
+    height: 50px;
+}
+
+.btnSiguiente:hover{
+    background-color: var(--clr-verde);
+    color: var(--clr-claro); 
+}
+
+.btnVolver{
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    border-radius: .5rem;
+    color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btnVolver:hover{
+    background-color: var(--clr-principal);
+}
+
+/* ---- datos envio ---- */
+
+.datosEnvio{
+    display: flex;
+    flex-direction: column;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.I2{
+    margin-top: 3px;
+}
+
+.direccion{
+    display: flex;
+}

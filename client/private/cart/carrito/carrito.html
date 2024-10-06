@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../../style/style_home.css">
+    <title>Carrito</title>
+</head>
+<body>
+    
+    <div class="container" id="contenedor-nav">
+       
+        <aside>
+
+            <header>
+                <h1 class="logo">CBATECH!</h1>
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a id="nomUsu"></a> 
+
+                <nav class="navbar">                   
+                    <a id="btnLogout" >Logout <i class="bi bi-box-arrow-in-left"></i></a>                         
+                </nav>
+            </header>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="http://localhost:3006/private/home/" class="boton-categoria boton-menu" style="font-size: x-large;" >Tienda <i class="bi bi-shop-window"></i></a>
+                    </li>                     
+                </ul>
+            </nav>
+
+            <footer class="text-footer">
+                <h6>@2024 Alejandro Martín</h6>
+            </footer>
+
+        </aside>
+
+        <div class="carro">
+            <main>                         
+                <div class="contenedor-Carrito" id="contenedor-Carrito">                
+
+                    <div id="carritoProductos" class="carritoProductos"> </div>
+
+                    <div id="carritosBotones" class="carritoBotones">
+                        <div class="carritoIzquierda">
+                            <button id="btnVaciarCarrito" class="btnVaciarCarrito">Vaciar carrito <i class="bi bi-cart-x"></i></button>
+                        </div>
+                        <div class="carritoDerecha">
+                            <div class="carritoTotales">
+                                <p style="color: var(--clr-principal);">Total: </p>
+                                <p style="color: var(--clr-principal);" id="total"></p>
+                            </div>
+                            <a href="http://localhost:3006/private/cart/tarjetaCredito/datosTarjeta.html">
+                                <button class="carritoComprar" id="carritoComprar">Comprar <i class="bi bi-bag-heart"></i></button>
+                            </a>                         
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        
+        
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../../../api/usuario.api.js"></script>
+    <script type="module" src="./carrito.js"></script>
+    <script type="module" src="/client/private/controller/sessionStorage.Logout.js"></script>
+    
+</body>
+</html>
