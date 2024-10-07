@@ -3,7 +3,8 @@ import { getProdByCategoria } from "../../api/productos.api.js";
 
 
 const data = await getProductos()
-const dataByCat = await getProdByCategoria()
+
+
 
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
@@ -36,25 +37,20 @@ function cargarProductos(productosElegidos){
 cargarProductos(data);
 
 botonesCategorias.forEach(boton => {
-    boton.addEventListener("click", (e) => {
+    boton.addEventListener("click", async (e) => {
+        e.preventDefault()
             
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");                     
-         
-        if (e.currentTarget.id != "todos") { 
-            const productosBoton = JSON.stringify(data.filter(producto => producto.categoria.id === e.currentTarget.id));
-            cargarProductos(JSON.parse(productosBoton));
+
+        const categ = e.currentTarget.id 
+        const res = await getProdByCategoria(categ)       
+
+        if (categ != "todos") { 
+            cargarProductos(res);
         } else {                       
             cargarProductos(data);
-        }
-   
-/*        
-        if (e.currentTarget.id != "todos") { 
-            cargarProductos(dataByCat(e.currentTarget.id));           
-        } else {                       
-            cargarProductos(data);
-        }    
-*/                                
+        }                            
     })
 })
 

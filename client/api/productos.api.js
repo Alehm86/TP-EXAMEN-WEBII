@@ -25,12 +25,9 @@ export const getProdByCategoria = async (e)=>{
             throw new Error('Error en la solicitud'); 
         } 
         const data = await response.json(); 
-        console.log(data)
         return data;
 
     }catch(error){ 
-            console.log('Error al traer los productos de la categoria!');
+            console.error('Error:', error); return []; 
     } 
 };
-
-
