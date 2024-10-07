@@ -39,7 +39,7 @@
 
         <div class="carro">
             <main>     
-                <a href="http://localhost:3006/private/cart/carrito/carrito.html">
+                <a href="http://localhost:3006/private/cart/carrito.html">
                     <button class="btnVolver"><i class="bi bi-arrow-90deg-left"> Volver </i></button> 
                 </a>                    
                     <div class="formTarjetas">
@@ -47,7 +47,7 @@
 
                             <div class="frente">
                                 <p class="frenteCredito">Credito</p>
-                                <img src="./img/chip.jpg" alt="" class="imgChip">
+                                <img src="../../../img/tarjeta/chip.jpg" alt="" class="imgChip">
                                 <p class="frenteNumero" id="cardNumero">0000 0000 0000 0000</p>
                                 <div class="frenteNomVenc">
                                     <p class="cardNombre">M. Molina</p>
@@ -73,7 +73,7 @@
                                         <input id="inpCodigo" class="inputCard" type="text" placeholder="Codigo dorso" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="3" required>                                  
                                     </div>
                                 </div>                               
-                                <a href="http://localhost:3006/private/cart/tarjetaCredito/opcionCuotas.html">
+                                <a href="http://localhost:3006/private/cart/html/opcionCuotas.html">
                                     <button class="btnCard" id="btnCard">Continuar</button>
                                 </a>
                             </div>
@@ -90,8 +90,8 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="../../../api/usuario.api.js"></script>
-    <script type="module" src="./datosTarjeta.js"></script>
-    <script type="module" src="/private/controller/sessionStorage.Logout.js"></script>
+    <script type="module" src="../js/datosTarjeta.js"></script>
+    <script type="module" src="../../controller/sessionStorage.Logout.js"></script>
     
 </body>
 </html>

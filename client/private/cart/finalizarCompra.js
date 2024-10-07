@@ -54,7 +54,7 @@ function loadTarjetaDatos(){
                             <div class="tarjeta">
                                 <div class="frente">
                                     <p class="frenteCredito">Credito</p>
-                                    <img src="../tarjetaCredito/img/chip.jpg" alt="" class="imgChip">
+                                    <img src="../../img/tarjeta/chip.jpg" alt="" class="imgChip">
                                     <p class="frenteNumero" id="cardNumero">${tarjeta.numero}</p>
                                     <div class="frenteNomVenc">
                                         <p class="cardNombre">${tarjeta.nombre}</p>
@@ -134,8 +134,8 @@ function TerminarCompra() {
     localStorage.setItem("datosDireccion", JSON.stringify(datosDireccion));
 }
 
-/*
+
 const btnFin = document.querySelector("#btnFin");
-btnFin.addEventListener('click', TerminarCompra);
-*/
+btnFin.addEventListener('click', TerminarCompra());
+
 

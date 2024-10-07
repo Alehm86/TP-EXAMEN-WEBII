@@ -3,7 +3,7 @@ import {readFile, writeFile} from 'fs/promises'
 
 const router = Router()
 
-const fileProd = await readFile('./data/productos.json', 'utf-8')
+const fileProd = await readFile('./server/data/productos.json', 'utf-8')
 const prodData = JSON.parse(fileProd)
 
 router.get('/all', (req, res)=>{

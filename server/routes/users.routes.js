@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises'
 
 const router = Router()
 
-const fileUsers = await readFile('./data/users.json')
+const fileUsers = await readFile('./server/data/users.json')
 const userData = JSON.parse(fileUsers)
 
 router.post('/login', (req, res)=>{

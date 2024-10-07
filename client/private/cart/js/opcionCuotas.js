@@ -51,7 +51,7 @@ function loadTotal(){
                                     <label for="12C">12X $${((total.total * 1.3) / 12).toFixed(2)} - (Total a pagar: $${(total.total * 1.3).toFixed(2)})</label>
                                 </div>                              
                             </div>
-                            <a href="http://localhost:3006/private/cart/direccion/direccion.html">
+                            <a href="http://localhost:3006/private/cart/html/direccion.html">
                                 <button class="filaOpc btnSiguiente" id="btnSiguiente">Siguiente</button> 
                             </a> 
                                   

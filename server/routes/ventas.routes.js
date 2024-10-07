@@ -4,7 +4,7 @@ import { readFile, writeFile } from 'fs/promises'
 const router = Router()
 
 const getData = async()=>{
-    const fileVentas = await readFile('./data/ventas.json', 'utf-8')
+    const fileVentas = await readFile('./server/data/ventas.json', 'utf-8')
     return JSON.parse(fileVentas)
 }
 
@@ -21,7 +21,7 @@ router.post('/nvaVenta', async (req, res)=>{
 
     try{
         ventasData.push({id_venta, fecha, id_cliente, total, metodo_pago})
-        writeFile('./data/ventas.json', JSON.stringify(ventasData,null,2))
+        writeFile('./server/data/ventas.json', JSON.stringify(ventasData,null,2))
         res.status(200).json({status:true})
 
     }catch(error){

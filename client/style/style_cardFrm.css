@@ -36,7 +36,7 @@ main{
 
 .frente{
     border-radius: .5rem;
-    background-image: url(/private/cart/tarjetaCredito/img/bg-card-front.png);
+    background-image: url(../img/tarjeta/bg-card-front.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 10rem;
@@ -72,7 +72,7 @@ main{
 
 .dorso{
     border-radius: .5rem;
-    background-image: url(/private/cart/tarjetaCredito/img/bg-card-back.png);
+    background-image: url(../img/tarjeta/bg-card-back.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 10rem;
