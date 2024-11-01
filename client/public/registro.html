@@ -7,22 +7,26 @@
     <title>registro</title>
 </head>
 <body>  
-    <form action="./msj_bienvenida.html">
+    <form id="formReg">
         <div class="registro-planilla">
             <h1 class="label-registro">Registro</h1>
-            <input class="input-planilla" type="text" placeholder="Nombre" required>
-            <input class="input-planilla" type="text" placeholder="Apellido" required>
-            <input class="input-planilla" type="email" placeholder="Email" required>
-            <input class="input-planilla" type="password" placeholder="Contraseña" required>
+            <input class="input-planilla" type="text" placeholder="Nombre" id="inpNombre" required>
+            <input class="input-planilla" type="text" placeholder="Apellido" id="inpApellido" required>
+            <input class="input-planilla" type="text" placeholder="Nombre de usuario" id="inpUsu" required>
+            <input class="input-planilla" type="email" placeholder="Email" id="inpEmail" required>
+            <input class="input-planilla" type="password" placeholder="Contraseña" id="inpPass" required>
             <input class="input-planilla" type="date" placeholder="Fecha de nacimiento" required>
             <div>
                 <input type="checkbox" required> 
                 <label for="" class="chk-registro" >He leído y estoy de acuerdo con los términos y condiciones</label>
             </div>       
-            <input type="submit" value="Registrar" class="btn-registro">
+            <input type="submit" value="Registrar" class="btn-registro" id="btnRegistrar">
         </div>
         
     </form>
- 
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./registro.js"></script>
+
 </body>
 </html>

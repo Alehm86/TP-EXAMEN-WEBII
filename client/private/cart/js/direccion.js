@@ -1,19 +1,14 @@
-let inpDireccion = document.querySelector('#inpDireccion');
-let inpAltura = document.querySelector('#inpNumero');
-let inpLocalidad = document.querySelector('#inpLocalidad');
-let inpProvincia = document.querySelector('#inpProvinica');
-let inpCPostal = document.querySelector('#inpCPostal');
 
 let datosDireccion = [];
 const btnDir = document.getElementById('btnDir')
 
 btnDir.addEventListener('click', ()=>{
      
-    const direccion= inpDireccion.value;
-    const altura= inpAltura.value;
-    const localidad= inpLocalidad.value;
-    const provincia= inpProvincia.value;
-    const cpostal= inpCPostal.value;
+    const direccion= document.querySelector('#inpDireccion').value;
+    const altura= document.querySelector('#inpNumero').value;
+    const localidad= document.querySelector('#inpLocalidad').value;
+    const provincia= document.querySelector('#inpProvinica').value;
+    const cpostal= document.querySelector('#inpCPostal').value;
     
     const newItem = {direccion: direccion, altura: altura, localidad: localidad, provincia: provincia, cpostal: cpostal}
     

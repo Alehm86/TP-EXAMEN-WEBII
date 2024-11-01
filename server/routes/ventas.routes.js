@@ -9,10 +9,10 @@ const getData = async()=>{
 }
 
 router.post('/nvaVenta', async (req, res)=>{
-    const {id_cliente, total, metodo_pago} = req.body
-    const ventasData = await getData()
-    const id_venta = ventasData[ventasData.length-1].id_venta + 1
     
+    const ventasData = await getData()
+    const {id_cliente, total, metodo_pago} = req.body
+    const id_venta = ventasData[ventasData.length-1].id_venta + 1 
     const fecha = new Date().toLocaleDateString('en-us', { 
         day:"numeric",
         month:"numeric",

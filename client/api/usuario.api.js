@@ -5,3 +5,6 @@ const user = getSession('user')
 
 nomUsuario.textContent = `${user.nombre} ${user.apellido}`
 
+
+
+

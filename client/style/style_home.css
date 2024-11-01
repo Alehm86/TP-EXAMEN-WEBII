@@ -1,5 +1,8 @@
 @import url('./style_principal.css');
 
+body{
+    height: 5000;
+}
 main{
     margin: 1rem;
     background-color: var(--clr-main);

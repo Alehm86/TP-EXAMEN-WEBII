@@ -21,7 +21,6 @@ const auth = async({email, pass})=>{
         console.error("Error:", error)
         throw new Error("Error en la petición");
     });
-
     return user
 }
 
