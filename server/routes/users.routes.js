@@ -50,7 +50,7 @@ router.post('/login', async (req, res)=>{
 router.post('/create', async (req, res)=>{
 
     const {name,lastname,username,email,pass} = req.body
-    let user = "standard"
+    const user = "standard"
     try{
         const hashedPass = bcrypt.hashSync(pass, 8);
         const result = await createUser({name,lastname,username,email,pass:hashedPass, user})

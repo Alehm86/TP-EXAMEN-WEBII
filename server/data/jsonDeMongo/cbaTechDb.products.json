@@ -5,7 +5,7 @@
   "id": "note-01",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci3 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 500Gb",
-  "imagen": "../../img/note/note1.webp",
+  "imagen": "../../img/note1.webp",
   "categoria": {
     "nombre": "Notebooks",
     "id": "note"
@@ -19,7 +19,7 @@
   "id": "note-02",
   "marca": "Dell",
   "espec": "CPU: <i class='bi bi-amd'></i> Amd Ryzen3 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
-  "imagen": "../../img/note/note2.webp",
+  "imagen": "../../img/note2.webp",
   "categoria": {
     "nombre": "Notebooks",
     "id": "note"
@@ -33,7 +33,7 @@
   "id": "note-03",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Cel N4120 - <i class='bi bi-memory'></i> 4Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
-  "imagen": "../../img/note/note3.webp",
+  "imagen": "../../img/note3.webp",
   "categoria": {
     "nombre": "Notebooks",
     "id": "note"
@@ -47,7 +47,7 @@
   "id": "note-04",
   "marca": "Lenovo",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci7 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb + <i class='bi bi-database-add'></i> HDD 1TB",
-  "imagen": "../../img/note/note4.webp",
+  "imagen": "../../img/note4.webp",
   "categoria": {
     "nombre": "Notebooks",
     "id": "note"
@@ -61,7 +61,7 @@
   "id": "note-05",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci7 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
-  "imagen": "../../img/note/note5.webp",
+  "imagen": "../../img/note5.webp",
   "categoria": {
     "nombre": "Notebooks",
     "id": "note"
@@ -75,7 +75,7 @@
   "id": "comp-01",
   "marca": "Kingston",
   "espec": "<i class='bi bi-database-add'></i> 120Gb",
-  "imagen": "../../img/comp/comp1.webp",
+  "imagen": "../../img/comp1.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -89,7 +89,7 @@
   "id": "comp-02",
   "marca": "Samsung",
   "espec": "<i class='bi bi-database-add'></i> 250Gb",
-  "imagen": "../../img/comp/comp2.webp",
+  "imagen": "../../img/comp2.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -103,7 +103,7 @@
   "id": "comp-03",
   "marca": "Intel",
   "espec": "Ci7-12700 - 12 <i class='bi bi-cpu'></i> - 4.9Ghz - S1700",
-  "imagen": "../../img/comp/comp3.webp",
+  "imagen": "../../img/comp3.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -117,7 +117,7 @@
   "id": "comp-04",
   "marca": "Intel",
   "espec": "Ci5-12400F - 6 <i class='bi bi-cpu'></i> - 4.4Ghz - S1700",
-  "imagen": "../../img/comp/comp4.webp",
+  "imagen": "../../img/comp4.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -131,7 +131,7 @@
   "id": "comp-05",
   "marca": "Intel",
   "espec": "Ci3-12100F - 4 <i class='bi bi-cpu'></i> - 4.3Ghz - S1700",
-  "imagen": "../../img/comp/comp5.webp",
+  "imagen": "../../img/comp5.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -145,7 +145,7 @@
   "id": "comp-06",
   "marca": "AMD",
   "espec": "<i class='bi bi-amd'></i> Ryzen 7-5800X - 8 <i class='bi bi-cpu'></i> - 4.7Ghz - AM4",
-  "imagen": "../../img/comp/comp6.webp",
+  "imagen": "../../img/comp6.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -159,7 +159,7 @@
   "id": "comp-07",
   "marca": "AMD",
   "espec": "<i class='bi bi-amd'></i> Ryzen 5-5600 - 6 <i class='bi bi-cpu'></i> - 4.7Ghz - AM4",
-  "imagen": "../../img/comp/comp7.webp",
+  "imagen": "../../img/comp7.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -173,7 +173,7 @@
   "id": "comp-08",
   "marca": "Kingston",
   "espec": "<i class='bi bi-database-add'></i> 8Gb - 3200MHz",
-  "imagen": "../../img/comp/comp8.webp",
+  "imagen": "../../img/comp8.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -187,7 +187,7 @@
   "id": "comp-09",
   "marca": "Adata",
   "espec": "<i class='bi bi-database-add'></i> 16Gb - 3200MHz",
-  "imagen": "../../img/comp/comp9.webp",
+  "imagen": "../../img/comp9.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -201,7 +201,7 @@
   "id": "comp-10",
   "marca": "Gigabyte",
   "espec": "B450M DS3H V2 - AM4",
-  "imagen": "../../img/comp/comp10.webp",
+  "imagen": "../../img/comp10.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -215,7 +215,7 @@
   "id": "comp-11",
   "marca": "Dell",
   "espec": "Pantalla de 27 pulgadas <i class='bi bi-display'></i> FHD IPS",
-  "imagen": "../../img/comp/comp11.webp",
+  "imagen": "../../img/comp11.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -229,7 +229,7 @@
   "id": "comp-12",
   "marca": "Asus",
   "espec": "Pantalla de 27 pulgadas <i class='bi bi-display'></i> FHD IPS",
-  "imagen": "../../img/comp/comp12.webp",
+  "imagen": "../../img/comp12.webp",
   "categoria": {
     "nombre": "Componentes",
     "id": "comp"
@@ -243,7 +243,7 @@
   "id": "cel-01",
   "marca": "Samsung",
   "espec": "Modelo: S23 - <i class='bi bi-sd-card'></i> 256Gb - <i class='bi bi-memory'></i> 8Gb",
-  "imagen": "../../img/cel/cel1.webp",
+  "imagen": "../../img/cel1.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -257,7 +257,7 @@
   "id": "cel-02",
   "marca": "Samsung",
   "espec": "Modelo: A52s - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 6Gb",
-  "imagen": "../../img/cel/cel2.webp",
+  "imagen": "../../img/cel2.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -271,7 +271,7 @@
   "id": "cel-03",
   "marca": "Samsung",
   "espec": "Modelo: A14 - <i class='bi bi-sd-card'></i> 64Gb - <i class='bi bi-memory'></i> 4Gb",
-  "imagen": "../../img/cel/cel3.webp",
+  "imagen": "../../img/cel3.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -285,7 +285,7 @@
   "id": "cel-04",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>15 - <i class='bi bi-sd-card'></i> 256Gb - <i class='bi bi-memory'></i> 8Gb",
-  "imagen": "../../img/cel/cel4.webp",
+  "imagen": "../../img/cel4.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -299,7 +299,7 @@
   "id": "cel-05",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>13 - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 4Gb",
-  "imagen": "../../img/cel/cel5.webp",
+  "imagen": "../../img/cel5.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -313,7 +313,7 @@
   "id": "cel-06",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>11 - <i class='bi bi-sd-card'></i> 64Gb - <i class='bi bi-memory'></i> 4Gb",
-  "imagen": "../../img/cel/cel6.webp",
+  "imagen": "../../img/cel6.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -327,7 +327,7 @@
   "id": "cel-07",
   "marca": "Motorola",
   "espec": "Modelo: Edge 30Neo - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 8Gb",
-  "imagen": "../../img/cel/cel7.webp",
+  "imagen": "../../img/cel7.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"
@@ -341,7 +341,7 @@
   "id": "cel-08",
   "marca": "Motorola",
   "espec": "Modelo: G23 - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 4Gb",
-  "imagen": "../../img/cel/cel8.webp",
+  "imagen": "../../img/cel8.webp",
   "categoria": {
     "nombre": "Celulares",
     "id": "cel"

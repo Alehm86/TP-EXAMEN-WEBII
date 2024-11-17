@@ -7,7 +7,8 @@
   "username": "xguillex",
   "email": "guillemartin@gmail.com",
   "pass": "$2a$08$GVtlGQ7fnJvRkS84pQeIue5BCl/US1ymKSaaVppAD3myKEULQ.dEi",
-  "__v": 0
+  "__v": 0,
+  "user": "standard"
 },
 {
   "_id": {
@@ -18,7 +19,8 @@
   "username": "alehm",
   "email": "alehmartin1986@gmail.com",
   "pass": "$2a$08$e8bGVGRawt2eIH5ct6gAmeV.VR7Gr8cRO7upraSU5z9icI9KAaw8S",
-  "__v": 0
+  "__v": 0,
+  "user": "admin"
 },
 {
   "_id": {
@@ -29,7 +31,8 @@
   "username": "olim19",
   "email": "olimartin@a.com",
   "pass": "$2a$08$ROpAW7gIV2ojSOtGoyRInOG.i342AS.uVTxvqlFRVaAiEjLFbVXEq",
-  "__v": 0
+  "__v": 0,
+  "user": "standard"
 },
 {
   "_id": {
@@ -40,7 +43,8 @@
   "username": "susyardiles56",
   "email": "susyardiles56@gmail.com",
   "pass": "$2a$08$gK.S.Akort9K1DXkyQLhEOwyuQ7qRDzUzW1oMe3aFKaDdRkHoWcVa",
-  "__v": 0
+  "__v": 0,
+  "user": "standard"
 },
 {
   "_id": {
@@ -51,5 +55,18 @@
   "username": "angelmaga",
   "email": "angel@a.com",
   "pass": "$2a$08$JXtwfGvwNS/y5eZHE6ERJeYUFhMAd0XGvCmYCVw7tGVHeG/HZI0uO",
-  "__v": 0
+  "__v": 0,
+  "user": "standard"
+},
+{
+  "_id": {
+    "$oid": "6735145995c9879e38a7ad45"
+  },
+  "name": "Jhon",
+  "lastname": "Doe",
+  "username": "JhonDoe",
+  "email": "JhonDoe@a.com",
+  "pass": "$2a$08$zqYp0cAshHnYjboA80PfOeH5noLUQCaenaLp1nMarE0aT33huMkk6",
+  "__v": 0,
+  "user": "standard"
 }]

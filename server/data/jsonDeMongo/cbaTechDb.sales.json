@@ -114,4 +114,34 @@
   "total": "1274000",
   "metodo_pago": "2",
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673514e795c9879e38a7ad4a"
+  },
+  "fecha": "11/13/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 1403000,
+  "metodo_pago": "2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673515e24970be5426efa498"
+  },
+  "fecha": "13/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 1916200,
+  "metodo_pago": "2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673a389d195a1944ea4d206e"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 770000,
+  "metodo_pago": "2",
+  "__v": 0
 }]
