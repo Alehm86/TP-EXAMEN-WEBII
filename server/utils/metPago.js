@@ -6,4 +6,3 @@ const mPagoData = JSON.parse(fileMpago)
 export const getMetPagoById = (id) => {
     return mPagoData.find(e => e.id === id)
 }
-

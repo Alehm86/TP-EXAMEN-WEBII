@@ -4,12 +4,13 @@ import cors from 'cors'
 import { API } from './client/api/api.js'
 
 import userRouter from './server/routes/users.routes.js'
-import prodRouter from './server/routes/productos.routes.js'
-import ventasRouter from './server/routes/ventas.routes.js'
+import prodRouter from './server/routes/product.routes.js'
+import ventasRouter from './server/routes/sales.routes.js'
+
+import 'dotenv/config'
 
 const app = express()
-const port = 3006
-
+const port = process.env.PORT
 
 app.use(express.json());
 app.listen(port, ()=>{

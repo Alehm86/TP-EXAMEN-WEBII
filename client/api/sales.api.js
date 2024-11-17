@@ -1,11 +1,11 @@
 import { API } from "./api.js"
 
-export const newUsu = async (datosUsuario) =>{
+export const newSale = async (datosVenta) =>{
 
     try{
-        const response = await fetch(`${API}/users/create`,{
+        const response = await fetch(`${API}/venta/nvaVenta/`,{
             method:"POST",
-            body: JSON.stringify(datosUsuario),
+            body: JSON.stringify(datosVenta),
             headers:{
                 'Content-Type': 'application/json'
             }
@@ -19,6 +19,6 @@ export const newUsu = async (datosUsuario) =>{
         return data
         
     }catch(error){
-        console.log('Error al guardar nuevo usuario')
+        console.log('Error al guardar la venta')
     }
 }

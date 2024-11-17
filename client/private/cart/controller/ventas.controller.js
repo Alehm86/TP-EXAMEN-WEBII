@@ -1,5 +1,5 @@
 import { getSession } from "../../controller/sessionStorage_controller.js";
-import { newVentas } from "../../../api/ventas.api.js";
+import { newSale } from "../../../api/sales.api.js";
 import { API } from "../../../api/api.js";
 
 const user = getSession('user')
@@ -156,7 +156,7 @@ btnFin.addEventListener('click', async (e)=>{
         metodo_pago
     }
 
-    const res = await newVentas(datosVenta)
+    const res = await newSale(datosVenta)
     
     if(res.status){
         TerminarCompra()

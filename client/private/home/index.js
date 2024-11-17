@@ -1,16 +1,10 @@
-import { getProductos } from "../../api/productos.api.js";
-import { getProdByCategoria } from "../../api/productos.api.js";
+import { getProduct, getProdByCategory } from "../../api/products.api.js";
 
-
-const data = await getProductos()
-
-
-
+const data = await getProduct()
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
-let botonesAgregar = document.querySelectorAll(".productoAgregar");
-const cantObjEnCarrito = document.querySelector("#objEnCarrito");                  
+let botonesAgregar = document.querySelectorAll(".productoAgregar");                 
                 
 function cargarProductos(productosElegidos){
   
@@ -44,7 +38,7 @@ botonesCategorias.forEach(boton => {
         e.currentTarget.classList.add("active");                     
 
         const categ = e.currentTarget.id 
-        const res = await getProdByCategoria(categ)       
+        const res = await getProdByCategory(categ)       
 
         if (categ != "todos") { 
             cargarProductos(res);
@@ -87,13 +81,7 @@ function agregarAlCarrito(e){
     localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));  
           
 }
-/*
-function actualizarNumCarrito() {
-    let numCarrito = productosEnCarrito.reduce ((acc, producto) => acc + producto.cantidad, 0);
-    cantObjEnCarrito.innerText = numCarrito;
-}
-*/
- 
+
 
 
 

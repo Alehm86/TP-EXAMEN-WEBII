@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "672d5c35e3d8f882cfa468f1"
+  },
+  "name": "Guillermo",
+  "lastname": "Martin",
+  "username": "xguillex",
+  "email": "guillemartin@gmail.com",
+  "pass": "$2a$08$GVtlGQ7fnJvRkS84pQeIue5BCl/US1ymKSaaVppAD3myKEULQ.dEi",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d5d94e3d8f882cfa468f5"
+  },
+  "name": "Alejandro",
+  "lastname": "Martin",
+  "username": "alehm",
+  "email": "alehmartin1986@gmail.com",
+  "pass": "$2a$08$e8bGVGRawt2eIH5ct6gAmeV.VR7Gr8cRO7upraSU5z9icI9KAaw8S",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672d6349ed621f48aea3ac7b"
+  },
+  "name": "Olivia",
+  "lastname": "Martin",
+  "username": "olim19",
+  "email": "olimartin@a.com",
+  "pass": "$2a$08$ROpAW7gIV2ojSOtGoyRInOG.i342AS.uVTxvqlFRVaAiEjLFbVXEq",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672e6743fed187ec756da9d1"
+  },
+  "name": "Susana",
+  "lastname": "Ardiles",
+  "username": "susyardiles56",
+  "email": "susyardiles56@gmail.com",
+  "pass": "$2a$08$gK.S.Akort9K1DXkyQLhEOwyuQ7qRDzUzW1oMe3aFKaDdRkHoWcVa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673512d7a55d4663dea29318"
+  },
+  "name": "Angel",
+  "lastname": "Magaquian",
+  "username": "angelmaga",
+  "email": "angel@a.com",
+  "pass": "$2a$08$JXtwfGvwNS/y5eZHE6ERJeYUFhMAd0XGvCmYCVw7tGVHeG/HZI0uO",
+  "__v": 0
+}]

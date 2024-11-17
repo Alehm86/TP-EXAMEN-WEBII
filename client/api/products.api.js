@@ -1,6 +1,6 @@
 import { API } from "./api.js"
 
-export const getProductos = async ()=>{
+export const getProduct = async ()=>{
  
         try { 
             const response = await fetch(`${API}/products/all`); 
@@ -16,7 +16,7 @@ export const getProductos = async ()=>{
         } 
 };
 
-export const getProdByCategoria = async (e)=>{
+export const getProdByCategory = async (e)=>{
  
     try { 
         const response = await fetch(`${API}/products/byCategory/${e}`); 

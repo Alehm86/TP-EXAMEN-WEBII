@@ -1,20 +1,20 @@
-import { newUsu } from "../api/newUsuario.api.js"
-import { API } from "../api/api.js"
+import { newUser } from "../api/newUser.api.js";
+import { API } from "../api/api.js";
 
 const btnReg = document.querySelector('#btnRegistrar')
 
 btnReg.addEventListener('click', async (e)=>{
     e.preventDefault()
 
-    const nombre = document.querySelector('#inpNombre').value;
-    const apellido = document.querySelector('#inpApellido').value;
+
+    const name = document.querySelector('#inpNombre').value;
+    const lastname = document.querySelector('#inpApellido').value;
     const username = document.querySelector('#inpUsu').value;
     const email = document.querySelector('#inpEmail').value;
     const pass = document.querySelector('#inpPass').value;
 
-    const datosUsuario = {nombre, apellido, username, email, pass}
-    
-    const res = await newUsu(datosUsuario)
+    const datosUsuario = {name, lastname, username, email, pass}
+    const res = await newUser(datosUsuario)
 
     if(res.status = true){  
         try{

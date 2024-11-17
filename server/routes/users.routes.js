@@ -1,72 +1,59 @@
 import { Router } from "express";
+import { KEY } from "../../client/api/secret.api.js";
+import { decodeToken } from "../../client/api/middleware.api.js";
+import { createUser, findEmail } from "../data/actions/user.actions.js";
+
 import { readFile, writeFile } from 'fs/promises'
 
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
-import { KEY } from "../../client/api/secret.api.js";
 
 const router = Router()
 
-const getData = async()=>{
-    const fileUsers = await readFile('./server/data/users.json', 'utf-8')
-    return JSON.parse(fileUsers)
-}
-
 
 router.post('/login', async (req, res)=>{
-    const userData = await getData()
+
     const email = req.body.email
     const pass = req.body.pass
-
-    const result = userData.find(e => e.email === email && e.pass === pass)
-
-    if(result){
-        const data = {
-            id: result.id,
-            nombre: result.nombre,
-            apellido: result.apellido,
-            email: result.email,
-            status: true
-        }
-        res.status(200).json(data)
-    }else{
-        res.status(400).json(`${email} no existe o contraseña incorrecta` + {status: false})
-    }
-})
-
-/*
-router.post('/login', (req, res)=>{
-    const email = req.body.email
-    const pass = req.body.pass
-
-    const result = userData.find(e => e.email === email)
     
-    if(!result){
-        return res.status(404).json(`${email} no existe o contraseña incorrecta` + {status: false});
+    try{
+        const result = await findEmail(email)
+
+        if(!result){
+            return res.status(401).send(`${email} no existe o contraseña incorrecta` + {status: false});
         }
+        
+        const controlPass = bcrypt.compareSync(pass, result.pass)
+        
+        if (!controlPass){
+            return res.status(401).send({status: false})
+        }
+        const token = jwt.sign({ ...result}, KEY, {expiresIn: 86400})
     
-    const controlPass = bcrypt.compareSync(pass, result.pass)
-    console.log(controlPass)
+        if(result){
+            const data = {
+                id: result._id,
+                nombre: result.name,
+                apellido: result.lastname,
+                email: result.email,
+                status: true
+            }
+            res.status(200).json(data)
+        }
 
-    if (!controlPass){
-        return res.status(404).json(`${email} no existe o contraseña incorrecta` + {status: false})
+    }catch(error){
+        console.log(error)
     }
-
-    const token = jwt.sign({ ...result}, KEY, {expiresIn: 86400})
-    res.status(200).json(token)
-
+    
 })
-*/
 
 router.post('/create', async (req, res)=>{
 
-    const userData = await getData()
-    const {nombre,apellido,username,email,pass} = req.body
-    const id = userData.length > 0 ? userData[userData.length-1].id +1 : 1 
-
+    const {name,lastname,username,email,pass} = req.body
+    let user = "standard"
     try{
-        userData.push({id, nombre, apellido, username, email, pass})
-        writeFile('./server/data/users.json', JSON.stringify(userData,null,2))
+        const hashedPass = bcrypt.hashSync(pass, 8);
+        const result = await createUser({name,lastname,username,email,pass:hashedPass, user})
         res.status(200).json({status:true})
 
     }catch(error){
@@ -74,5 +61,12 @@ router.post('/create', async (req, res)=>{
         res.status(400).json({status:false})
     }
 })
+
+router.post('/decodeToken',async (req,res)=>{
+    const token = req.body.token
+    const result = await decodeToken(token)
+    res.status(200).json(result)
+})
+
 
 export default router
