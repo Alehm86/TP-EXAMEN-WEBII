@@ -17,6 +17,7 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.0",
+    "objectid": "^3.2.1",
     "path": "^0.12.7"
   }
 }

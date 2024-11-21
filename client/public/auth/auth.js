@@ -34,7 +34,12 @@ btnLogin.addEventListener('click', async (e) => {
         try{
             const user = await auth({email, pass})
             addSession(user)
-            window.location.href = `${API}/private/home/`
+            if(user.user === "admin"){
+                window.location.href = `${API}/private/admin/userAdmin.html`               
+            }else{
+                window.location.href = `${API}/private/home/`
+            }
+
         }catch(error){
             handleAlert('Email o contraseña incorrectos!')
         }

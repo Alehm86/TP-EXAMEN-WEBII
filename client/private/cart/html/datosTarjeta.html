@@ -68,10 +68,24 @@
                                 <div class="fechaVenc">
                                     <h1>Fecha de vencimiento / codigo de verificación</h1>                               
                                     <div class="inputFechaCard">
-                                        <input id="inpMes" class="inputCardFecha" type="text" placeholder="mes" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="2" required>
+                                        <select class="inputCardFecha" name="Mes" placeholder="mes" id="inpMes">
+                                            <option value="01" selected>Enero</option>
+                                            <option value="02">Febrero</option>
+                                            <option value="03">Marzo</option>
+                                            <option value="04">Abril</option>
+                                            <option value="05">Mayo</option>
+                                            <option value="06">Junio</option>
+                                            <option value="07">Julio</option>
+                                            <option value="08">Agosto</option>
+                                            <option value="09">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
                                         <input id="inpYear" class="inputCardFecha" type="text" placeholder="año" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" required> 
                                         <input id="inpCodigo" class="inputCard" type="text" placeholder="Codigo dorso" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="3" required>                                  
                                     </div>
+                                    <div id="alert_container"></div>
                                 </div>                               
                                 <a href="http://localhost:3006/private/cart/html/opcionCuotas.html">
                                     <button class="btnCard" id="btnCard">Continuar</button>
@@ -89,9 +103,10 @@
     </div>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script type="module" src="../../../api/usuario.api.js"></script>
+    <script type="module" src="../../../api/user.api.js"></script>
     <script type="module" src="../js/datosTarjeta.js"></script>
     <script type="module" src="../../controller/sessionStorage.Logout.js"></script>
+    <script type="module" src="../../../components/alert.js"></script>
     
 </body>
 </html>

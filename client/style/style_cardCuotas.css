@@ -5,10 +5,7 @@ label{
     color: var(--clr-claro);
 }
 
-main{
-    width: 100%;
-    height: 100%;   
-}
+
 .cuerpo{
     border: solid rgba(0, 0, 0, 0.39);
     border-radius: 1rem;

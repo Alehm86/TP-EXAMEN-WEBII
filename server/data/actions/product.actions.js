@@ -1,17 +1,6 @@
 import { connectToDatabase } from "../connection.js";
 import Product from "../schemas/product.schema.js";
 
-export const createPrduct = async({id, marca, espec, imagen, categoria, precio})=>{
-    try{
-        await connectToDatabase()
-        const res = await Product.create({id, marca, espec, imagen, categoria, precio})
-        return JSON.parse(JSON.stringify(res))
-
-    }catch(error){
-        console.log(error)
-    }
-}
-
 export const findAll = async()=>{
     try{
         await connectToDatabase()
@@ -22,11 +11,22 @@ export const findAll = async()=>{
     }
 }
 
-export const findByCategory = async(categoria)=>{
+export const findByCategory = async(category)=>{
     try{
         await connectToDatabase()
-        const res = await Product.find({categoria}).populate({path:"categoria"})
+        const res = await Product.find({category})
         return JSON.parse(JSON.stringify(res))
+    }catch(error){
+        console.log(error)
+    }
+}
+
+export const newProduct = async({marca,espec,imagen,category,precio})=>{
+    try{
+        await connectToDatabase()
+        const res = await Product.create({marca,espec,imagen,category,precio})
+        return JSON.parse(JSON.stringify(res))
+
     }catch(error){
         console.log(error)
     }

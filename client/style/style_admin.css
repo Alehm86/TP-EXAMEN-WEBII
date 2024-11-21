@@ -1,0 +1,143 @@
+@import url('/style/style_principal.css');
+@import url('/style/style_home.css');
+
+h2, h5{color: var(--clr-principal);}
+h3{color: orange;}
+
+
+aside{
+    width: 39vh;
+}
+
+.carro{
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.botonCat{
+    background-color: transparent;
+    color: var(--clr-claro);
+    border: 0;
+    font-weight: 400;
+    cursor:pointer;
+    gap: 1rem;
+    padding: 1rem;
+    margin: .25rem;
+    align-self: start;
+    
+}
+
+.inpCard{
+    border-radius: .2rem;
+    border: solid var(--clr-principal);
+    color: var(--clr-principal);
+    padding: 0.1rem;
+}
+
+.btnCard{
+    background-color: var(--clr-btnAgregar);
+    margin-top: 20px;
+    border-radius: 1rem;
+    color: black;
+    border: solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    cursor: pointer;
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: x-large;
+    color: var(--clr-claro);
+
+}
+
+.btnCard:hover{
+	color: var(--clr-principal);
+    background-color: var(--clr-gold);
+}
+
+.espc{
+    padding: 1rem;  
+}
+
+.mk1{
+    display: flex;
+    justify-content: space-between;
+	
+}
+.formFile {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	margin-bottom: 20px;
+}
+.formFileAction {
+	width: 100%;
+}
+.formFileAction label {
+	display: block;
+}
+.formFileAction label.title {
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.formFileAction input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+.form-file__result {
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	width: 50%;
+	height: 350px;
+	background-color: #f2f0f0;
+	border-radius: 8px;
+	border: 1px dashed #609dd6;
+	transition: bacgroundColor 0.3s linear;
+	z-index: 10;
+}
+.form-file__result::after {
+	content: 'Clic para elegir imagen.';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #609dd6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-file__result img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 50;
+}
+.form-file__result--active {
+	background-color: rgba(82, 81, 79, 0.314);
+}
+
+.mensaje{
+	font-size: xx-large;
+	text-align: center;
+}
+
+.registro-planilla{
+	display: grid;
+	place-items: center;
+	margin: auto;
+}
+
+.inpReg{
+	padding: 1rem;
+	margin-top: 10px;
+	width: 25rem;
+}

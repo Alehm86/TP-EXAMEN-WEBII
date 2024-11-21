@@ -1,3 +1,6 @@
+import { handleAlert, alert } from "../../../components/alert.js";
+
+const alertContainer = document.getElementById('alert_container')
 
 let mensajeError = document.querySelector('.mensajeError');
 
@@ -73,12 +76,12 @@ mesInp.addEventListener('input', ()=>{
 });
 
 yearInp.addEventListener('input', ()=>{
-    
     if(yearInp.value == ''){
         yearCard.textContent = '0000'
     }else{
         yearCard.textContent = yearInp.value;
     }
+
 });
 
 codeInp.addEventListener('input', ()=>{

@@ -35,7 +35,7 @@ function loadProdCarrito(){
                                         <small>Subtotal</small>
                                         <p>$${producto.precio * producto.cantidad}</p>
                                     </div>
-                                    <button class="cardEliminarCarrito" id="${producto.id}"><i class="bi bi-trash3"></i></button>
+                                    <button class="cardEliminarCarrito" id="${producto._id}"><i class="bi bi-trash3"></i></button>
                                             
                                 `;
                 contenedorCarritoProductos.append(div);  
@@ -57,7 +57,7 @@ function actBtnEliminar(){
 
 function eliminarDelCarrito(e) {
     const idBoton = e.currentTarget.id;
-    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+    const index = productosEnCarrito.findIndex(producto => producto._id === idBoton);
     productosEnCarrito.splice(index, 1);
 
     loadProdCarrito();

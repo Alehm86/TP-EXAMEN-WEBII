@@ -7,4 +7,3 @@ nomUser.textContent = `${user.nombre} ${user.apellido}`
 
 
 
-

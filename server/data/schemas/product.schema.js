@@ -1,13 +1,12 @@
 import mongoose from 'mongoose';
 
-const { Schema, model, models} = mongoose;
+const { Schema, model, models, ObjectID} = mongoose;
 
 const ProductSchema = new Schema({
-    id:{type: String, required:true},
     marca:{type: String, required:true},
     espec:{type: String, required:true},
     imagen:{type: String, required:true},
-    categoria:{type: String, required:true},
+    category:{type: String, required:true},
     precio:{type: Number, required:true}
 })
 

@@ -36,6 +36,7 @@ router.post('/login', async (req, res)=>{
                 nombre: result.name,
                 apellido: result.lastname,
                 email: result.email,
+                user: result.user,
                 status: true
             }
             res.status(200).json(data)
@@ -49,11 +50,11 @@ router.post('/login', async (req, res)=>{
 
 router.post('/create', async (req, res)=>{
 
-    const {name,lastname,username,email,pass} = req.body
-    const user = "standard"
+    const {name,lastname,username,email,pass,user} = req.body
+
     try{
         const hashedPass = bcrypt.hashSync(pass, 8);
-        const result = await createUser({name,lastname,username,email,pass:hashedPass, user})
+        const result = await createUser({name,lastname,username,email,pass:hashedPass,user})
         res.status(200).json({status:true})
 
     }catch(error){

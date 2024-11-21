@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../../style/style_admin.css">
+    <title>Carrito</title>
+</head>
+<body>
+    
+    <div class="container" id="contenedor-nav">
+       
+        <aside>
+
+            <header>
+                <h1 class="logo">CBATECH!</h1>
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a id="nomUsu"></a>
+                
+                <nav class="navbar">                   
+                    <a id="btnLogout" >Logout <i class="bi bi-box-arrow-in-left"></i></a>                         
+                </nav>
+            </header>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="http://localhost:3006/private/admin/userAdmin.html" class="botonCat" style="font-size: x-large;" >Ver catálogo <i class="bi bi-list-columns"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:3006/private/admin/html/addProd.html" class="botonCat" style="font-size: x-large;" >Agregar porducto <i class="bi bi-clipboard-plus-fill"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="" class="botonCat" style="font-size: x-large;" >Libro diario <i class="bi bi-search"></i></a>
+                    </li>
+                   
+                </ul>
+            </nav>
+
+            <footer class="text-footer">
+                <h6>@2024 Alejandro Martín</h6>
+            </footer>
+
+        </aside>
+
+        <div class="carro">
+            <main>  
+                <form id="mk1">
+                    <div class="registro-planilla">
+                        <h3 class="label-registro">Registro de nuevo usuario administrador</h3>
+                        <input class="inpCard inpReg" type="text" placeholder="Nombre" id="inpNombre" required>
+                        <input class="inpCard inpReg" type="text" placeholder="Apellido" id="inpApellido" required>
+                        <input class="inpCard inpReg" type="text" placeholder="Nombre de usuario" id="inpUsu" required>
+                        <input class="inpCard inpReg" type="email" placeholder="Email" id="inpEmail" required>
+                        <input class="inpCard inpReg" type="password" placeholder="Contraseña" id="inpPass" required>
+     
+                        <input type="submit" value="Registrar" class="btnCard" id="btnRegistrar" disabled>
+                    </div>
+                    
+                </form>                          
+            </main>
+        </div>       
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../../../api/user.api.js"></script>
+    <script type="module" src="../../controller/sessionStorage.Logout.js"></script>
+    <script type="module" src="../js/newUser.js"></script>
+    
+</body>
+</html>
