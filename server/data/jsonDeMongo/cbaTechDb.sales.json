@@ -144,4 +144,44 @@
   "total": 770000,
   "metodo_pago": "2",
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673a51689c3581566bf9eee7"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 690000,
+  "metodo_pago": "2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673a521b9c3581566bf9eef8"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 780000,
+  "metodo_pago": "2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673a82381aaec296a977b20a"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 1456000,
+  "metodo_pago": "2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673b6ad4837cae3a0861c702"
+  },
+  "fecha": "18/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 949000,
+  "metodo_pago": "2",
+  "__v": 0
 }]

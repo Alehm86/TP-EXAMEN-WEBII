@@ -2,349 +2,271 @@
   "_id": {
     "$oid": "67339e5b53bb48d25e0638ce"
   },
-  "id": "note-01",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci3 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 500Gb",
   "imagen": "../../img/note1.webp",
-  "categoria": {
-    "nombre": "Notebooks",
-    "id": "note"
-  },
-  "precio": 600000
+  "precio": 600000,
+  "category": "Notebook"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638cf"
   },
-  "id": "note-02",
   "marca": "Dell",
   "espec": "CPU: <i class='bi bi-amd'></i> Amd Ryzen3 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
   "imagen": "../../img/note2.webp",
-  "categoria": {
-    "nombre": "Notebooks",
-    "id": "note"
-  },
-  "precio": 430000
+  "precio": 430000,
+  "category": "Notebook"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d0"
   },
-  "id": "note-03",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Cel N4120 - <i class='bi bi-memory'></i> 4Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
   "imagen": "../../img/note3.webp",
-  "categoria": {
-    "nombre": "Notebooks",
-    "id": "note"
-  },
-  "precio": 290000
+  "precio": 290000,
+  "category": "Notebook"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d1"
   },
-  "id": "note-04",
   "marca": "Lenovo",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci7 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb + <i class='bi bi-database-add'></i> HDD 1TB",
   "imagen": "../../img/note4.webp",
-  "categoria": {
-    "nombre": "Notebooks",
-    "id": "note"
-  },
-  "precio": 980000
+  "precio": 980000,
+  "category": "Notebook"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d2"
   },
-  "id": "note-05",
   "marca": "Asus",
   "espec": "CPU: <i class='bi bi-cpu'></i> Intel Ci7 - <i class='bi bi-memory'></i> 8Gb DDR4 - <i class='bi bi-nvme'></i> SSD 256Gb",
   "imagen": "../../img/note5.webp",
-  "categoria": {
-    "nombre": "Notebooks",
-    "id": "note"
-  },
-  "precio": 850000
+  "precio": 850000,
+  "category": "Notebook"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d3"
   },
-  "id": "comp-01",
   "marca": "Kingston",
   "espec": "<i class='bi bi-database-add'></i> 120Gb",
   "imagen": "../../img/comp1.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 20000
+  "precio": 20000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d4"
   },
-  "id": "comp-02",
   "marca": "Samsung",
   "espec": "<i class='bi bi-database-add'></i> 250Gb",
   "imagen": "../../img/comp2.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 130000
+  "precio": 130000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d5"
   },
-  "id": "comp-03",
   "marca": "Intel",
   "espec": "Ci7-12700 - 12 <i class='bi bi-cpu'></i> - 4.9Ghz - S1700",
   "imagen": "../../img/comp3.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 450000
+  "precio": 450000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d6"
   },
-  "id": "comp-04",
   "marca": "Intel",
   "espec": "Ci5-12400F - 6 <i class='bi bi-cpu'></i> - 4.4Ghz - S1700",
   "imagen": "../../img/comp4.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 250000
+  "precio": 250000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d7"
   },
-  "id": "comp-05",
   "marca": "Intel",
   "espec": "Ci3-12100F - 4 <i class='bi bi-cpu'></i> - 4.3Ghz - S1700",
   "imagen": "../../img/comp5.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 160000
+  "precio": 160000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d8"
   },
-  "id": "comp-06",
   "marca": "AMD",
   "espec": "<i class='bi bi-amd'></i> Ryzen 7-5800X - 8 <i class='bi bi-cpu'></i> - 4.7Ghz - AM4",
   "imagen": "../../img/comp6.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 385000
+  "precio": 385000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638d9"
   },
-  "id": "comp-07",
   "marca": "AMD",
   "espec": "<i class='bi bi-amd'></i> Ryzen 5-5600 - 6 <i class='bi bi-cpu'></i> - 4.7Ghz - AM4",
   "imagen": "../../img/comp7.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 290000
+  "precio": 290000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638da"
   },
-  "id": "comp-08",
   "marca": "Kingston",
   "espec": "<i class='bi bi-database-add'></i> 8Gb - 3200MHz",
   "imagen": "../../img/comp8.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 24000
+  "precio": 24000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638db"
   },
-  "id": "comp-09",
   "marca": "Adata",
   "espec": "<i class='bi bi-database-add'></i> 16Gb - 3200MHz",
   "imagen": "../../img/comp9.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 40000
+  "precio": 40000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638dc"
   },
-  "id": "comp-10",
   "marca": "Gigabyte",
   "espec": "B450M DS3H V2 - AM4",
   "imagen": "../../img/comp10.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 185000
+  "precio": 185000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638dd"
   },
-  "id": "comp-11",
   "marca": "Dell",
   "espec": "Pantalla de 27 pulgadas <i class='bi bi-display'></i> FHD IPS",
   "imagen": "../../img/comp11.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 350000
+  "precio": 350000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638de"
   },
-  "id": "comp-12",
   "marca": "Asus",
   "espec": "Pantalla de 27 pulgadas <i class='bi bi-display'></i> FHD IPS",
   "imagen": "../../img/comp12.webp",
-  "categoria": {
-    "nombre": "Componentes",
-    "id": "comp"
-  },
-  "precio": 200000
+  "precio": 200000,
+  "category": "Componentes"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638df"
   },
-  "id": "cel-01",
   "marca": "Samsung",
   "espec": "Modelo: S23 - <i class='bi bi-sd-card'></i> 256Gb - <i class='bi bi-memory'></i> 8Gb",
   "imagen": "../../img/cel1.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 1250000
+  "precio": 1250000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e0"
   },
-  "id": "cel-02",
   "marca": "Samsung",
   "espec": "Modelo: A52s - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 6Gb",
   "imagen": "../../img/cel2.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 420000
+  "precio": 420000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e1"
   },
-  "id": "cel-03",
   "marca": "Samsung",
   "espec": "Modelo: A14 - <i class='bi bi-sd-card'></i> 64Gb - <i class='bi bi-memory'></i> 4Gb",
   "imagen": "../../img/cel3.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 350000
+  "precio": 350000,
+  "category": "673a674d705e2200731e16e3"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e2"
   },
-  "id": "cel-04",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>15 - <i class='bi bi-sd-card'></i> 256Gb - <i class='bi bi-memory'></i> 8Gb",
   "imagen": "../../img/cel4.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 1600000
+  "precio": 1600000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e3"
   },
-  "id": "cel-05",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>13 - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 4Gb",
   "imagen": "../../img/cel5.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 1250000
+  "precio": 1250000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e4"
   },
-  "id": "cel-06",
   "marca": "Apple",
   "espec": "Modelo: <i class='bi bi-apple'></i>11 - <i class='bi bi-sd-card'></i> 64Gb - <i class='bi bi-memory'></i> 4Gb",
   "imagen": "../../img/cel6.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 1250000
+  "precio": 1250000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e5"
   },
-  "id": "cel-07",
   "marca": "Motorola",
   "espec": "Modelo: Edge 30Neo - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 8Gb",
   "imagen": "../../img/cel7.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
-  },
-  "precio": 550000
+  "precio": 550000,
+  "category": "Celulares"
 },
 {
   "_id": {
     "$oid": "67339e5b53bb48d25e0638e6"
   },
-  "id": "cel-08",
   "marca": "Motorola",
   "espec": "Modelo: G23 - <i class='bi bi-sd-card'></i> 128Gb - <i class='bi bi-memory'></i> 4Gb",
   "imagen": "../../img/cel8.webp",
-  "categoria": {
-    "nombre": "Celulares",
-    "id": "cel"
+  "precio": 305000,
+  "category": "Celulares"
+},
+{
+  "_id": {
+    "$oid": "673ac5cd426b0e51d06cfb19"
   },
-  "precio": 305000
+  "marca": "Dell",
+  "espec": "AlienWare, 16Gb RAM, 1TB SSD",
+  "imagen": "../../img/note6.webp",
+  "category": "Notebook",
+  "precio": 1600000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673b6b0b837cae3a0861c706"
+  },
+  "marca": "Asus",
+  "espec": "Core i7 - tactil - 8gb RAM - 1TB SSD",
+  "imagen": "../../img/note7.webp",
+  "category": "Notebook",
+  "precio": 2600000,
+  "__v": 0
 }]
