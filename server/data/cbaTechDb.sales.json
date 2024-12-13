@@ -1,0 +1,219 @@
+[{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a191d"
+  },
+  "fecha": "10/08/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
+  "total": 314000,
+  "metodo_pago": 2,
+  "mes": 8
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a191e"
+  },
+  "fecha": "10/08/2024",
+  "id_cliente": "\"672d5d94e3d8f882cfa468f5\"",
+  "total": 1250000,
+  "metodo_pago": 4,
+  "mes": 8
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a191f"
+  },
+  "fecha": "15/08/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
+  "total": 2780000,
+  "metodo_pago": 2,
+  "mes": 8
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1920"
+  },
+  "fecha": "18/09/2024",
+  "id_cliente": "672e6743fed187ec756da9d1",
+  "total": 170000,
+  "metodo_pago": 3,
+  "mes": 9
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1921"
+  },
+  "fecha": "31/09/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
+  "total": 1415000,
+  "metodo_pago": 1,
+  "mes": 9
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1922"
+  },
+  "fecha": "04/10/2024",
+  "id_cliente": "673512d7a55d4663dea29318",
+  "total": 111000,
+  "metodo_pago": 1,
+  "mes": 10
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1923"
+  },
+  "fecha": "04/10/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
+  "total": 151000,
+  "metodo_pago": 2,
+  "mes": 10
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1924"
+  },
+  "fecha": "23/10/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
+  "total": 60000,
+  "metodo_pago": 2,
+  "mes": 10
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1925"
+  },
+  "fecha": "23/10/2024",
+  "total": 620000,
+  "metodo_pago": 2,
+  "mes": 10,
+  "id_cliente": "672e6743fed187ec756da9d1"
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1926"
+  },
+  "fecha": "31/10/2024",
+  "id_cliente": "673512d7a55d4663dea29318",
+  "total": 1625000,
+  "metodo_pago": 2,
+  "mes": 10
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1927"
+  },
+  "fecha": "31/10/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
+  "total": 545100,
+  "metodo_pago": 2,
+  "mes": 10
+},
+{
+  "_id": {
+    "$oid": "6733adacf1fa0f075b2a1928"
+  },
+  "fecha": "12/11/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
+  "total": 1380000,
+  "metodo_pago": 2,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "6733afd4b9d1f82df68cc449"
+  },
+  "fecha": "12/11/2024",
+  "id_cliente": "672e6743fed187ec756da9d1",
+  "total": 1274000,
+  "metodo_pago": 2,
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673514e795c9879e38a7ad4a"
+  },
+  "fecha": "13/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 1403000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673515e24970be5426efa498"
+  },
+  "fecha": "13/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 1916200,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673a389d195a1944ea4d206e"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 770000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673a51689c3581566bf9eee7"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 690000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673a521b9c3581566bf9eef8"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
+  "total": 780000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673a82381aaec296a977b20a"
+  },
+  "fecha": "17/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 1456000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "673b6ad4837cae3a0861c702"
+  },
+  "fecha": "18/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "total": 949000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11
+},
+{
+  "_id": {
+    "$oid": "6744c34ecb14301d9f4e0426"
+  },
+  "fecha": "25/11/2024",
+  "id_cliente": "6735145995c9879e38a7ad45",
+  "mes": 11,
+  "total": 169000,
+  "metodo_pago": "2",
+  "__v": 0
+}]

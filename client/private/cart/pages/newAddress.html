@@ -17,7 +17,7 @@
                 <h1 class="logo">CBATECH!</h1>
                 <a href=""><i class="bi bi-person-circle"></i></a>
                 <a id="nomUsu"></a>
-                
+
                 <nav class="navbar">                   
                     <a id="btnLogout" >Logout <i class="bi bi-box-arrow-in-left"></i></a>                         
                 </nav>
@@ -32,22 +32,33 @@
             </nav>
 
             <footer class="text-footer">
-                <h6>@2024 Alejandro Martín</h3>
+                <h6>@2024 Alejandro Martín</h6>
             </footer>
 
         </aside>
 
         <div class="carro">
             <main>      
-                    <a href="http://localhost:3006/private/cart/html/datosTarjeta.html">
+                    <a href="http://localhost:3006/private/cart/pages/opcionCuotas.html">
                         <button class="btnVolver"><i class="bi bi-arrow-90deg-left"> Volver </i></button> 
-                    </a>                                    
-                    <div class="cuerpo" id="cuerpo">
-
-                        <div class="contenedorCuotas" id="contenedorCuotas"></div>
-
-                    </div>
-                            
+                    </a>  
+                    
+                    <div class="align">  
+                        <div class="formPagoTarjeta" style="height: 25rem;">
+                            <h3>Datos de envio:</h3> 
+                            <div class="datosEnvio">
+                                <div class="direccion">
+                                    <input id="inpDireccion" type="text" placeholder="direccion" class="inputCard I2" required >
+                                    <input id="inpNumero" type="text" placeholder="numero" class="inputCard I2" style="width: 80px; margin-left: 3px;" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="6" required>
+                                </div>
+                                <input id="inpLocalidad" type="text" placeholder="localidad" class="inputCard I2" required>
+                                <input id="inpProvinica" type="text" placeholder="provincia" class="inputCard I2" required>
+                                <input id="inpCPostal" type="text" placeholder="codigo postal" class="inputCard I2" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" required>
+                                <button type="submit" class="btnCard" id="btnDir">Agregar</button>      
+                                </div>
+                            </div>                             
+                        </div>
+                          
             </main>
         </div>
         
@@ -56,7 +67,7 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="../../../api/user.api.js"></script>
-    <script type="module" src="../js/opcionCuotas.js"></script>
+    <script type="module" src="../js/newAddress.js"></script>
     <script type="module" src="../../controller/sessionStorage.Logout.js"></script>
     
 </body>

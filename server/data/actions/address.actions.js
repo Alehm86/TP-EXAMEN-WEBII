@@ -1,10 +1,10 @@
 import { connectToDatabase } from "../connection.js";
-import Sales from "../schemas/sales.schema.js";
+import Address from "../schemas/address.schema.js";
 
-export const newSale = async({fecha, mes, id_cliente, total, metodo_pago, status, id_Address})=>{
+export const createAddress = async({id_client, address, height, locality, postal, province, status})=>{
     try{
         await connectToDatabase()
-        const res = await Sales.create({fecha, mes, id_cliente, total, metodo_pago, status, id_Address})
+        const res = await Address.create({id_client, address, height, locality, postal, province, status})
         return JSON.parse(JSON.stringify(res))
 
     }catch(error){
@@ -12,54 +12,52 @@ export const newSale = async({fecha, mes, id_cliente, total, metodo_pago, status
     }
 }
 
-export const findSales = async()=>{
+export const findAddressByIdClient = async(id_client)=>{
     try{
         await connectToDatabase()
-        const res = await Sales.find()
+        const res = await Address.find({id_client})
         return JSON.parse(JSON.stringify(res))
     }catch(error){
         console.log(error)
     }
 }
 
-export const findSalesByMonth = async(mes)=>{
+export const findAddressById = async(_id)=>{
     try{
         await connectToDatabase()
-        const res = await Sales.find({mes})
+        const res = await Address.find({_id})
         return JSON.parse(JSON.stringify(res))
     }catch(error){
         console.log(error)
     }
 }
 
-export const findSalesByStatus = async(status)=>{
+export const updateAddress = async(address, height, locality, province, postal, _id)=>{
     try{
         await connectToDatabase()
-        const res = await Sales.find({status}).populate({path:"id_cliente"})
+        const res = await Address.findByIdAndUpdate(_id, {address, height, locality, province, postal})
+        return JSON.parse(JSON.stringify(res))
+    }catch(error){
+        console.log(error)
+    }
+}
+    
+export const findAddrIdStatus = async(id_client, status)=>{
+    try{
+        await connectToDatabase()
+        const res = await Address.find({id_client, status})
         return JSON.parse(JSON.stringify(res))
     }catch(error){
         console.log(error)
     }
 }
 
-export const findSalesById = async(_id)=>{
+export const disabledAddress = async(status, _id)=>{
     try{
         await connectToDatabase()
-        const res = await Sales.find({_id}).populate({path:"id_cliente"}).populate({path:"id_Address"})
+        const res = await Address.findByIdAndUpdate(_id, {status})
         return JSON.parse(JSON.stringify(res))
     }catch(error){
         console.log(error)
     }
 }
-
-export const updateByStatus = async(status, _id)=>{
-    try{
-        await connectToDatabase()
-        const res = await Sales.findByIdAndUpdate(_id, {status})
-        return JSON.parse(JSON.stringify(res))
-    }catch(error){
-        console.log(error)
-    }
-}
-
-

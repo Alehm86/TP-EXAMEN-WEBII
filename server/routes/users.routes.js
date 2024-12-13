@@ -3,8 +3,6 @@ import { KEY } from "../../client/api/secret.api.js";
 import { decodeToken } from "../../client/api/middleware.api.js";
 import { createUser, findEmail } from "../data/actions/user.actions.js";
 
-import { readFile, writeFile } from 'fs/promises'
-
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
@@ -50,16 +48,27 @@ router.post('/login', async (req, res)=>{
 
 router.post('/create', async (req, res)=>{
 
-    const {name,lastname,username,email,pass,user} = req.body
+    const {name,lastname,username,email,pass,typeUser} = req.body
 
     try{
         const hashedPass = bcrypt.hashSync(pass, 8);
-        const result = await createUser({name,lastname,username,email,pass:hashedPass,user})
+        const result = await createUser({name,lastname,username,email,pass:hashedPass,typeUser})
         res.status(200).json({status:true})
 
     }catch(error){
         console.log(error)
         res.status(400).json({status:false})
+    }
+})
+
+router.get('/findByEmail/:email', async(req, res)=>{
+    const email = req.params.email
+    try{
+        const result = await findEmail(email)                       
+        res.status(200).json({status:true, result})
+
+    }catch(error){
+        res.status(400).json({status: false})
     }
 })
 

@@ -1,10 +1,10 @@
 import { connectToDatabase } from "../connection.js";
 import User from "../schemas/user.schema.js";
 
-export const createUser = async({name, lastname, username, email, pass})=>{
+export const createUser = async({name, lastname, username, email, pass, typeUser})=>{
     try{
         await connectToDatabase()
-        const res = await User.create({name, lastname, username, email, pass})
+        const res = await User.create({name, lastname, username, email, pass, typeUser})
         return JSON.parse(JSON.stringify(res))
 
     }catch(error){
@@ -22,3 +22,4 @@ export const findEmail = async(email)=>{
         console.log(error)
     }
 }
+

@@ -1,0 +1,65 @@
+@import url('./style_principal.css');
+@import url('./style_admin.css');
+
+h2{
+    color: black;
+}
+
+main{
+    background-color: rgba(128, 128, 128, 0.171);
+    height: 100%;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10rem;
+}
+.container-printArea{   
+    
+    margin: auto;
+    border:dotted black 1px;
+    width: 50%;
+    height: 100%;
+    color: black;
+    background-color: white;
+}
+
+.dataArea{
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.btnArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.buttons{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.btnPrint{
+    gap: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    width: 150px;
+    height: 50px;
+    color: var(--clr-principal);
+    background-color: var(--clr-claro);
+    border-radius: 10px;
+    border: solid 1px var(--clr-principal);
+    font-size: x-large;
+
+}
+
+.btnPrint:hover{
+    background-color: wheat;
+}
+

@@ -1,25 +1,26 @@
-import { newUser } from "../api/newUser.api.js";
+import { newUser, findByEmail} from "../api/newUser.api.js";
 import { API } from "../api/api.js";
 
-const btnReg = document.querySelector('#btnRegistrar')
+const btnDataUser = document.querySelector('#btndataUser')
 
-btnReg.addEventListener('click', async (e)=>{
+btnDataUser.addEventListener('click', async (e)=>{
     e.preventDefault()
-
 
     const name = document.querySelector('#inpNombre').value;
     const lastname = document.querySelector('#inpApellido').value;
     const username = document.querySelector('#inpUsu').value;
     const email = document.querySelector('#inpEmail').value;
     const pass = document.querySelector('#inpPass').value;
-    const user = "admin"
+    const typeUser = "standard"
 
-    const datosUsuario = {name, lastname, username, email, pass, user}
+    const datosUsuario = {name, lastname, username, email, pass, typeUser}
     const res = await newUser(datosUsuario)
+
+    localStorage.setItem("email", JSON.stringify(email));
 
     if(res.status = true){  
         try{
-            window.location.href = `${API}/public/msj_bienvenida.html`
+            window.location.href = `${API}/public/registroAddress.html`
         }catch(error){
             console.log('Error al cargar pagina!')
         }    
@@ -28,5 +29,4 @@ btnReg.addEventListener('click', async (e)=>{
         console.log('Error al registrar la nuevo usuario!')
     }
 })
-
 

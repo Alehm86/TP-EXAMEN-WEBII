@@ -1,7 +1,9 @@
 @import url('./style_principal.css');
 
 /* ================= LOGIN =====================*/
-
+main{
+    height: 100%;
+}
 .login{   
     height: 100vh;
     display: flex;
@@ -162,6 +164,7 @@
     cursor: pointer;
     color: var(--clr-principal);
     width: 20rem;
+    background-color: skyblue;
 }
 
 .btn-registro:hover{

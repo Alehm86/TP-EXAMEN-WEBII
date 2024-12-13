@@ -22,4 +22,17 @@ export const newUser = async (datosUsuario) =>{
     }
 }
 
+export const findByEmail = async (e)=>{
+    try { 
+        const response = await fetch(`${API}/users/findByEmail/${e}`); 
+        
+        if (!response.ok) { 
+            throw new Error('Error en la solicitud'); 
+        } 
+        const data = await response.json(); 
+        return data;
 
+    }catch(error){ 
+            console.error('Error:', error); return []; 
+    } 
+};

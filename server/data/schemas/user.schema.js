@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     username:{type: String, required:true},
     email:{type: String, required:true, unique:true},
     pass:{type: String, required:true},
-    user:{type: String, required:true}
+    typeUser:{type: String, required:true}
 })
 
 const User = models.user || model('user', UserSchema)

@@ -5,8 +5,6 @@ const data = await getProduct()
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".productoAgregar");      
-
-
                 
 function cargarProductos(productosElegidos){
   
@@ -31,17 +29,6 @@ function cargarProductos(productosElegidos){
     actualizarBotonesAgregar();                
 }
 cargarProductos(data);
-
-let cantidad = document.getElementById(`cantCarrito${idInput}`).value;
-let btnAdd = document.getElementById(`btnAdd${producto._id}`)
-btnAdd.disabled=true;
-
-cantidad.addEventListener('input', ()=>{
-    
-    if(cantidad.value < 0){
-        
-    }
-});
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", async (e) => {
@@ -83,9 +70,9 @@ function agregarAlCarrito(e){
     const idInput = e.currentTarget.id 
     const cantidades = document.getElementById(`cantCarrito${idInput}`).value;
     const idBoton = e.currentTarget.id
-    const productoAgregado = data.find(producto => producto._id===idBoton);
+    const productoAgregado = data.find(producto => producto._id === idBoton);
 
-    if (productosEnCarrito.some(producto => producto._id===idBoton)){
+    if (productosEnCarrito.some(producto => producto._id === idBoton)){
         const index = productosEnCarrito.findIndex(producto => producto._id === idBoton);
         productosEnCarrito[index].cantidad++;                  
     }else{

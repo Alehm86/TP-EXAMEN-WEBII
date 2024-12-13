@@ -15,28 +15,25 @@ function loadProdCarrito(){
         productosEnCarrito.forEach(producto => {
             const div = document.createElement("div")
             div.classList.add("carritoProducto");    
-            div.innerHTML = `
-            
-                                
+            div.innerHTML = `                                
                                 <img class="cardImgCarrito" src="${producto.imagen}" alt="${producto.marca}">    
                                 <div class="cardTituloCarrito">
                                     <small>Producto</small>
-                                        <h3>${producto.marca +" "+producto.espec}</h3>
-                                    </div>
-                                    <div class="cardProdCant">
-                                        <small>Cantidad</small>
-                                        <p>${producto.cantidad}</p>
-                                    </div>
-                                    <div class="cardProdPrecio">
-                                        <small>Precio</small>
-                                        <p>${producto.precio}</p>
-                                    </div>
-                                    <div>
-                                        <small>Subtotal</small>
-                                        <p>$${producto.precio * producto.cantidad}</p>
-                                    </div>
-                                    <button class="cardEliminarCarrito" id="${producto._id}"><i class="bi bi-trash3"></i></button>
-                                            
+                                    <h3>${producto.marca +" "+producto.espec}</h3>
+                                </div>
+                                <div class="cardProdCant">
+                                    <small>Cantidad</small>
+                                    <p>${producto.cantidad}</p>
+                                </div>
+                                <div class="cardProdPrecio">
+                                    <small>Precio</small>
+                                    <p>${producto.precio}</p>
+                                </div>
+                                <div>
+                                    <small>Subtotal</small>
+                                    <p>$${producto.precio * producto.cantidad}</p>
+                                </div>
+                                <button class="cardEliminarCarrito" id="${producto._id}"><i class="bi bi-trash3"></i></button>              
                                 `;
                 contenedorCarritoProductos.append(div);  
         })

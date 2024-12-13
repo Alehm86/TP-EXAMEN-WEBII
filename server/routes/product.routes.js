@@ -24,7 +24,6 @@ router.get('/byCategory/:category', async (req,res)=>{
 })
 
 router.post('/create', async (req, res)=>{
-
     const {marca,espec,imagen,precio,category} = req.body
 
     try{

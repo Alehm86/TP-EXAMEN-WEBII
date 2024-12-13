@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style_login_reg_msj.css">
+    <title>registro</title>
+</head>
+<body>  
+    <form id="formReg">
+        <div class="registro-planilla">
+            <h1 class="label-registro">Datos de envio</h1>                                
+            <div class="direccion">
+                <input id="inpAddress" type="text" placeholder="direccion" class="input-planilla I2" required >
+                <input id="inpHeight" type="text" placeholder="Alt." class="input-planilla I2" style="width: 80px; margin-left: 3px;" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="6" required>
+            </div>
+            <div>
+                <input id="inpLocality" type="text" placeholder="localidad" class="input-planilla" required>
+            <input id="inpPostal" type="text" placeholder="C.P." class="input-planilla" style="width: 80px; margin-left: 3px;" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" required>
+            </div>
+            <input id="inpProvince" type="text" placeholder="provincia" class="input-planilla" required>     
+            <input type="submit" value="Registrar" class="btn-registro" id="btnRegistrar">
+        </div>
+        
+    </form>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./registroAddress.js"></script>
+
+</body>
+</html>

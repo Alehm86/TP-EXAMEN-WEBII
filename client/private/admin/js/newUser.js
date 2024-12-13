@@ -6,7 +6,6 @@ const btnReg = document.querySelector('#btnRegistrar')
 btnReg.addEventListener('click', async (e)=>{
     e.preventDefault()
 
-
     const name = document.querySelector('#inpNombre').value;
     const lastname = document.querySelector('#inpApellido').value;
     const username = document.querySelector('#inpUsu').value;

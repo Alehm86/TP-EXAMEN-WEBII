@@ -35,7 +35,7 @@ btnLogin.addEventListener('click', async (e) => {
             const user = await auth({email, pass})
             addSession(user)
             if(user.user === "admin"){
-                window.location.href = `${API}/private/admin/userAdmin.html`               
+                window.location.href = `${API}/private/admin/home.html`               
             }else{
                 window.location.href = `${API}/private/home/`
             }

@@ -105,8 +105,8 @@ aside{
 
 .boton-menu:hover{
     background-color: transparent;
-    color: var(--clr-claro);
-    border: 1px solid var(--clr-claro);
+    color: wheat;
+    
  }
 
 .contenedor-productos{
@@ -120,7 +120,7 @@ aside{
     height: 360px;
 }
  .card-detalle{
-    background-color: var(--clr-principal);
+    background-color:rgba(54, 10, 104, 0.808);
     color: var(--clr-claro);
     padding: .5rem;
     border-radius: 2rem;
@@ -140,7 +140,7 @@ aside{
     font-size: 30px;
  }
  .card-precio{
-    color: var(--clr-gold);
+    color: var(--clr-claro);
  }
 
  .card-cantidad{
@@ -172,9 +172,9 @@ aside{
  }
 
  .productoAgregar:hover{
-    background-color: var(--clr-btnAgregarHover);
+    background-color: rgba(255, 255, 255, 0.534);
     color: var(--clr-claro);
-    border: 1px solid var(--clr-claro);
+    border: 1px solid rgba(49, 49, 49, 0.726);
  }
 
  .carrito-Productos{
@@ -270,6 +270,11 @@ aside{
     color: var(--clr-principal); 
     padding: 1rem;
 }
+
+.cardTituloCarrito{
+    width: 30%;
+}
+
 
 
 

@@ -5,5 +5,4 @@ const user = getSession('user')
 
 nomUser.textContent = `${user.nombre} ${user.apellido}`
 
-
-
+export const id_user = user.id

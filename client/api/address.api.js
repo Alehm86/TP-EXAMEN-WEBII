@@ -1,11 +1,10 @@
 import { API } from "./api.js"
 
-export const newSale = async (datosVenta) =>{
-
+export const newAddress = async (dataAddress) =>{
     try{
-        const response = await fetch(`${API}/venta/nvaVenta/`,{
+        const response = await fetch(`${API}/address/create`,{
             method:"POST",
-            body: JSON.stringify(datosVenta),
+            body: JSON.stringify(dataAddress),
             headers:{
                 'Content-Type': 'application/json'
             }
@@ -19,30 +18,14 @@ export const newSale = async (datosVenta) =>{
         return data
         
     }catch(error){
-        console.log('Error al guardar la venta')
+        console.log('Error al guardar dirección')
     }
 }
 
-export const getSales = async ()=>{
+export const findAddressByIdClient = async (e)=>{
  
     try { 
-        const response = await fetch(`${API}/venta/all`); 
-        
-        if (!response.ok) { 
-            throw new Error('Error en la solicitud'); 
-        } 
-        const data = await response.json(); 
-        return data;
-
-    }catch(error){ 
-            console.error('Error:', error); return []; 
-    } 
-};
-
-export const findSalesByMonth = async (e)=>{
- 
-    try { 
-        const response = await fetch(`${API}/venta/ByMonth/${e}`); 
+        const response = await fetch(`${API}/address/ByIdClient/${e}`); 
         
         if (!response.ok) { 
             throw new Error(`Error: ${response.status}`); 
@@ -55,10 +38,10 @@ export const findSalesByMonth = async (e)=>{
     } 
 };
 
-export const findSalesByStatus = async (e)=>{
+export const findAddressById = async (e)=>{
  
     try { 
-        const response = await fetch(`${API}/venta/ByStatus/${e}`); 
+        const response = await fetch(`${API}/address/ById/${e}`); 
         
         if (!response.ok) { 
             throw new Error(`Error: ${response.status}`); 
@@ -71,26 +54,10 @@ export const findSalesByStatus = async (e)=>{
     } 
 };
 
-export const findSalesById = async (e)=>{
+export const editAddress = async (dates)=>{
  
     try { 
-        const response = await fetch(`${API}/venta/ById/${e}`); 
-        
-        if (!response.ok) { 
-            throw new Error(`Error: ${response.status}`); 
-        } 
-        const data = await response.json(); 
-        return data;
-
-    }catch(error){ 
-            console.error('Error:', error); return []; 
-    } 
-};
-
-export const updateStatus = async (dates)=>{
- 
-    try { 
-        const response = await fetch(`${API}/venta/updateStatus`,{
+        const response = await fetch(`${API}/address/editAddress`,{
             method:"PATCH",
             body: JSON.stringify(dates),
             headers:{
@@ -108,3 +75,49 @@ export const updateStatus = async (dates)=>{
             console.error('Error:', error); return []; 
     } 
 };
+
+export const findAddresByIdclientAndStatus = async (dates)=>{
+ 
+    try { 
+        const response = await fetch(`${API}/address/ById&Status`,{
+            method:"POST",
+            body: JSON.stringify(dates),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+        
+        if (!response.ok) { 
+            throw new Error(`Error: ${response.status}`); 
+        } 
+        const data = await response.json(); 
+        return data;
+
+    }catch(error){ 
+            console.error('Error:', error); return []; 
+    } 
+};
+
+export const disabledAddress = async (dates)=>{
+ 
+    try { 
+        const response = await fetch(`${API}/address/disAddress`,{
+            method:"PATCH",
+            body: JSON.stringify(dates),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+        
+        if (!response.ok) { 
+            throw new Error(`Error: ${response.status}`); 
+        } 
+        const data = await response.json(); 
+        return data;
+
+    }catch(error){ 
+            console.error('Error:', error); return []; 
+    } 
+};
+
+

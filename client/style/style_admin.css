@@ -1,7 +1,8 @@
 @import url('/style/style_principal.css');
 @import url('/style/style_home.css');
+@import url('../style/style_home.css');
 
-h2, h5{color: var(--clr-principal);}
+h1, h2, h4, h5, h6, small{color: var(--clr-principal);}
 h3{color: orange;}
 
 
@@ -12,6 +13,22 @@ aside{
 .carro{
     background-color: rgba(128, 128, 128, 0.082);
 }
+
+.fila{
+	justify-content: space-between;
+}
+
+.send{
+	border: 0;
+    background-color: transparent;
+    color: var(--clr-red);
+    font-size: x-large;
+} 
+
+.send:hover{
+    color: green;
+    cursor: pointer;
+ }
 
 .botonCat{
     background-color: transparent;
@@ -25,6 +42,13 @@ aside{
     align-self: start;
     
 }
+
+.botonCat:hover{
+	font-size: xx-large;
+	color: wheat;
+}
+
+
 
 .inpCard{
     border-radius: .2rem;
@@ -140,4 +164,91 @@ aside{
 	padding: 1rem;
 	margin-top: 10px;
 	width: 25rem;
+}
+
+.thead{
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	color: orange;
+	font-size: large;
+
+}
+
+.tbody{
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.salesRow{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px;
+}
+
+.inpDate{
+	width: 150px;
+	gap: 15px;
+	padding: 5px;
+	color: var(--clr-principal);
+	border-radius: 5px;
+	border: solid 1px;
+}
+
+.ancho{
+
+	margin: unset;
+	width: 10rem;
+}
+
+.right{
+	text-align: right;
+}
+
+.center{
+	text-align: center;
+}
+
+.total{
+	display: flex;
+	margin-left: 70%;
+	gap: 1rem;
+	margin-top: 3rem;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.scrollContainer{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.scrollinCard{
+	flex: 0 0 auto;
+	height: 100%;
+}
+
+.containerProd{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	gap: 5px;
+	height: 35rem;
+	width: 90rem;
+	align-items: center;
+}
+
+.cardSales{
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	border: solid 1px var(--clr-principal);
+	padding: 10px;
+	margin-top: 15px;
+	border-radius: 15px;
+	text-align: center;
 }

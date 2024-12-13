@@ -6,6 +6,7 @@ import { API } from './client/api/api.js'
 import userRouter from './server/routes/users.routes.js'
 import prodRouter from './server/routes/product.routes.js'
 import ventasRouter from './server/routes/sales.routes.js'
+import addressRouter from './server/routes/address.routes.js'
 
 import 'dotenv/config'
 
@@ -29,3 +30,4 @@ app.use(cors(corsOptions));
 app.use('/users', userRouter)
 app.use('/products', prodRouter)
 app.use('/venta', ventasRouter)
+app.use('/address', addressRouter)

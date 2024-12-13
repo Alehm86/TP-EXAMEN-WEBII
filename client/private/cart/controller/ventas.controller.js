@@ -1,6 +1,7 @@
 import { getSession } from "../../controller/sessionStorage_controller.js";
 import { newSale } from "../../../api/sales.api.js";
 import { API } from "../../../api/api.js";
+import { findAddressById } from "../../../api/address.api.js";
 
 const user = getSession('user')
 const btnFin = document.getElementById('btnFin');
@@ -8,11 +9,13 @@ const datosCuotas= JSON.parse(localStorage.getItem("datosCuotas"));
 const productosEnCarrito= JSON.parse(localStorage.getItem("productosEnCarrito"));
 const tarjetaElement= JSON.parse(localStorage.getItem("tarjetaElement"));
 const totalAPagar= JSON.parse(localStorage.getItem("totalAPagar"));
-const datosDireccion= JSON.parse(localStorage.getItem("datosDireccion"));  
 const contenedorCarritoProductos = document.querySelector("#carritoProductos");
 const contenedorDatosTarjeta = document.querySelector("#datosTarjeta");
 const contenedorDatosCuotas = document.querySelector("#datosCuotas");
 const contenedorDatosDireccion = document.querySelector("#datosDireccion");
+const idAddress = JSON.parse(localStorage.getItem("idAddress"));
+
+const dataAddress = await findAddressById(idAddress)
 
 
 function loadProdCarrito(){
@@ -26,33 +29,28 @@ function loadProdCarrito(){
                                 <img class="cardImgCarrito" src="${producto.imagen}" alt="${producto.marca}">    
                                 <div class="cardTituloCarrito">
                                     <small>Producto</small>
-                                        <h3>${producto.marca +" "+producto.espec}</h3>
-                                    </div>
-                                    <div class="cardProdCant">
-                                        <small>Cantidad</small>
-                                        <p>${producto.cantidad}</p>
-                                    </div>
+                                    <h3>${producto.marca +" "+producto.espec}</h3>
+                                </div>
+                                <div class="cardProdCant">
+                                    <small>Cantidad</small>
+                                    <p>${producto.cantidad}</p>
+                                </div>
                                     <div class="cardProdPrecio">
-                                        <small>Precio</small>
-                                        <p>${producto.precio}</p>
-                                    </div>
-                                    <div>
-                                        <small>Subtotal</small>
-                                        <p>$${producto.precio * producto.cantidad}</p>
-                                    </div>
-                                    
-                                            
+                                    <small>Precio</small>
+                                    <p>${producto.precio}</p>
+                                </div>
+                                <div>
+                                    <small>Subtotal</small>
+                                    <p>$${producto.precio * producto.cantidad}</p>
+                                </div>                                         
                                 `;
                 contenedorCarritoProductos.append(div);  
         })
-
 }
 loadProdCarrito();
 
 function loadTarjetaDatos(){
-
-    contenedorDatosTarjeta.innerHTML="";
-    
+    contenedorDatosTarjeta.innerHTML="";   
     tarjetaElement.forEach(tarjeta => {
             const div = document.createElement("div")
             div.classList.add("datosTarjeta");    
@@ -70,9 +68,7 @@ function loadTarjetaDatos(){
                                 <div class="dorso">
                                 <p class="dorsoCodigo" id="cardCodigo">${tarjeta.codigo}</p>
                                 </div>
-                            </div>
-                          
-                                            
+                            </div>                                                             
                                 `;
             contenedorDatosTarjeta.append(div);  
         })
@@ -80,9 +76,7 @@ function loadTarjetaDatos(){
 loadTarjetaDatos();
 
 function loadCuotasDatos(){
-
-    contenedorDatosCuotas.innerHTML="";
-    
+    contenedorDatosCuotas.innerHTML="";  
     datosCuotas.forEach(cuotas => {
             const div = document.createElement("div")
             div.classList.add("datosCuotas");    
@@ -92,36 +86,31 @@ function loadCuotasDatos(){
                             <h1>Interes: ${cuotas.interes}</h1>
                             <h1>Valor de la cuota: $${cuotas.valCuota}</h1>
                             <h1>Monto total a pagar: $${cuotas.total}</h1>                                        
-                            `;
-              
+                            `;              
             contenedorDatosCuotas.append(div);  
         })
 }
 loadCuotasDatos();
 
-function loadDireccionDatos(){
-
-    contenedorDatosDireccion.innerHTML="";
-    
-    datosDireccion.forEach(dir => {
+function loadDireccionDatos(data){
+    contenedorDatosDireccion.innerHTML="";   
+    data.forEach(address => {
             const div = document.createElement("div")
             div.classList.add("datosdireccion");    
             div.innerHTML = `                                          
                             <h2>Datos de envio</h2>
                             <div class="datosDir">
-                                <h1>Direccion: ${dir.direccion}.</h1>
-                                <h1>altura: ${dir.altura}</h1>
+                                <h1>Direccion: ${address.address + ' nº:' + address.height}</h1>
+
                             </div>
-                            <h1>Localidad: ${dir.localidad}</h1>
-                            <h1>Provincia: ${dir.provincia}</h1>
-                            <h1>Codigo postal: ${dir.cpostal}</h1>
-                                            
+                            <h1>Localidad: ${address.locality}</h1>
+                            <h1>Provincia: ${address.province}</h1>
+                            <h1>Codigo postal: ${address.postal}</h1>                                          
                             `;
             contenedorDatosDireccion.append(div);  
         })
 }
-
-loadDireccionDatos();
+loadDireccionDatos(dataAddress.result);
 
 function TerminarCompra() {
     productosEnCarrito.length = 0;  
@@ -135,13 +124,11 @@ function TerminarCompra() {
 
     totalAPagar.length = 0;
     localStorage.setItem("totalAPagar", JSON.stringify(totalAPagar));
-
-    datosDireccion.length = 0;
-    localStorage.setItem("datosDireccion", JSON.stringify(datosDireccion));
 }
 
 btnFin.addEventListener('click', async (e)=>{
     e.preventDefault()
+    const id_Address = idAddress
     const id_cliente = user.id
     const metodo_pago = 2
     let total = 0
@@ -153,14 +140,20 @@ btnFin.addEventListener('click', async (e)=>{
     const datosVenta = {
         id_cliente,
         total:parseInt(total),
-        metodo_pago
+        metodo_pago,
+        id_Address
     }
 
+    const isConfirmed = confirm("¿Estás seguro de que deseas terminar la compra?");
+    if (!isConfirmed) {
+        return;
+    }
+    
     const res = await newSale(datosVenta)
     
     if(res.status){
         TerminarCompra()
-        window.location.href = `${API}/private/cart/html/mensaje.html`
+        window.location.href = `${API}/private/cart/pages/mensaje.html`
     }else{
         console.log('Error al registrar la venta!')
     }

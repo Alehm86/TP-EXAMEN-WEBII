@@ -5,12 +5,16 @@ label{
     color: var(--clr-claro);
 }
 
+main{
+    height: 100%;
+}
+
 
 .cuerpo{
     border: solid rgba(0, 0, 0, 0.39);
     border-radius: 1rem;
     padding: 1rem;
-    width: 60rem;
+    width: 70rem;
     margin: auto;
     margin-top: 6rem;
     gap: 1rem;   
@@ -21,9 +25,9 @@ label{
     border: solid 1px transparent;
     border-radius: .5rem;
     background-color: var(--clr-grisTransp);
-    margin-top: 5px;
-    height: 2.5rem;
-    width: 58rem;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
 }
 
 .opcion{
@@ -86,4 +90,58 @@ label{
 
 .direccion{
     display: flex;
+}
+
+.btnNext{
+    background-color: transparent;
+    border: none;
+    color: var(--clr-gold);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.btnNext:hover{
+    color: greenyellow;
+}
+
+.btnDelete{
+    background-color: transparent;
+    border: none;
+    color: rgb(192, 13, 13);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.btnDelete:hover{
+    color:red;
+}
+
+.btnEdit{
+    background-color: transparent;
+    border: none;
+    color: orange;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.btnEdit:hover{
+    color:greenyellow;
+}
+
+.containerBtnAdd{
+    margin: auto;
+}
+
+.add{
+    font-size: xx-large;
+    cursor: pointer;
+    color: greenyellow;
+}
+
+.add:hover{
+    color: var(--clr-gold);
+}
+
+.labelAddress{
+    width: 200px;
 }

@@ -8,7 +8,6 @@ const fileInput = document.getElementById('image')
 const dropZone = document.getElementById('result-image')
 const img = document.getElementById('img-result')
 
-
 dropZone.addEventListener('click', () => fileInput.click())
 
 dropZone.addEventListener('dragover', (e) => {
@@ -48,9 +47,6 @@ fileInput.addEventListener('change', (e) => {
     imagen = `../../img/${file.name}`
 })
 
-
-
-
 btnNewProduct.addEventListener('click', async(e)=>{
     e.preventDefault()
 
@@ -74,6 +70,12 @@ btnNewProduct.addEventListener('click', async(e)=>{
             break;
     }  
     const dataProduct = {marca,espec,imagen,category,precio}
+
+    const isConfirmed = confirm("¿Estás seguro que los datos estan cargados correctamente?");
+    if (!isConfirmed) {
+        return;
+    }
+
     const res = await newProduct(dataProduct)
 
     if(res.status = true){  
