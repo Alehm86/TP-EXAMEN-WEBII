@@ -1,6 +1,8 @@
 import { getProduct, getProdByCategory } from "../../api/products.api.js";
 
 const data = await getProduct()
+const array = data
+const Product = array.reverse();
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -28,7 +30,7 @@ function cargarProductos(productosElegidos){
     })
     actualizarBotonesAgregar();                
 }
-cargarProductos(data);
+cargarProductos(Product);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", async (e) => {
@@ -44,7 +46,7 @@ botonesCategorias.forEach(boton => {
         if (categ != "todos") { 
             cargarProductos(res);
         } else {                       
-            cargarProductos(data);
+            cargarProductos(Product);
         }                            
     })
 })

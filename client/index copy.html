@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style/style_login_reg_msj.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login-fondo">
+        <img src="./public/img/note.webp" alt="" class="img">
+        <img src="./public/img/cel.webp" alt="" class="img">
+        <img src="./public/img/comp.webp" alt="" class="img">
+
+    </div>
+    
+    <div class="login">
+        
+        <h1 class="login-logo"> CBATECH! </h1>
+
+        <form class="login-form" id="login">
+
+            <h1 class="login-titulo">Login</h1>
+            <div class="login-contenido">
+                    
+                <div class="login-boxInput">
+                    <label for="login-email" class="login-label">Email <i class="bi bi-person"></i></label>
+                    <input type="email" class="login-input" id="email" placeholder="" required>
+                </div>
+
+                <div class="login-box">
+                    
+                    <div class="login-boxInput">
+                        <label for="login-pass" class="login-label">Contraseña <i class="bi bi-key"></i></label>
+                        <input type="password" class="login-input" id="pass" placeholder="" required>
+                        <div id="alert_container"></div>
+                    </div>
+
+                </div> 
+                <div class="login-check">
+
+                    <div class="login-checkGroup">
+                        <input type="checkbox" class="login-checkInput" id="login-check">
+                        <label for="login-check" class="login-checkLabel">Recordar</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="" class="btnLogin" id="btnLogin">Login</button>
+
+            <p class="login-registro">¿No tienes cuenta? <a href="http://localhost:3006/public/registro.html" class="registrar">Registrar</a></p>          
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./public/auth/auth.js"></script>
+    
+
+
+</body>
+</html>

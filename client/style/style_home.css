@@ -1,5 +1,6 @@
 @import url('./style_principal.css');
 
+small{font-family: 'poppins';}
 body{
     height: 5000;
 }
@@ -46,6 +47,9 @@ aside{
     margin-right: 15px;
     cursor: pointer;
 }
+.navbar a:hover{
+    color: var(--clr-gold); 
+}
 
 .navbar a::before{
     content: '';
@@ -54,8 +58,9 @@ aside{
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--clr-claro);
-    transition: .3s;  
+    background: var(--clr-gold);
+    transition: .3s; 
+    color: var(--clr-gold); 
 }
 
 .navbar a:hover::before{
@@ -96,8 +101,8 @@ aside{
 
 .boton-menu.active{
     background-color: transparent;
-    color: var(--clr-naranja);
-    border: 1px solid var(--clr-naranja);
+    color: skyblue;
+    border: 1px solid skyblue;
     width: 100%;
     font-size: 1.25rem;
    
@@ -213,12 +218,12 @@ aside{
 .cardEliminarCarrito{
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: yellow ;
     font-size: x-large;
  }
 
 .cardEliminarCarrito:hover{
-    color: yellow;
+    color: var(--clr-red);
     cursor: pointer;
  }
 
@@ -229,24 +234,25 @@ aside{
 
 .btnVaciarCarrito{
     border: 0;
-    background-color: var(--clr-principal);
+    background-color: orange;
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-claro);
+    color: var(--clr-principal);
     text-transform: uppercase;
     cursor: pointer;
  }
 
 .btnVaciarCarrito:hover{
-    background-color: var(--clr-red);
+    background-color: rgba(255, 0, 0, 0.767);
+    color: var(--clr-claro);
  }
 
 .carritoComprar{
     border: 0;
-    background-color: var(--clr-btnAgregarHover);
+    background-color: skyblue;
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-claro);
+    color: var(--clr-principal);
     text-transform: uppercase;
     cursor: pointer;
     font-size: large;
@@ -261,6 +267,8 @@ aside{
     color: var(--clr-principal);
     align-items: center;
     gap: .5rem;
+    background-color: rgba(135, 207, 235, 0.582);
+    border-radius: 1rem;
 }
 
 .carritoTotales{
@@ -269,6 +277,7 @@ aside{
     font-size: larger;
     color: var(--clr-principal); 
     padding: 1rem;
+    
 }
 
 .cardTituloCarrito{

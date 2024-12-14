@@ -5,7 +5,7 @@ const router = Router()
 
 router.post('/create', async (req, res)=>{
     const {id_client, address, height, locality, postal, province} = req.body
-    const status = "true"
+    const status = "enabled"
     try{
         const result = await createAddress({id_client, address, height, locality, postal, province, status})
         res.status(200).json({status:true})

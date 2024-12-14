@@ -27,11 +27,11 @@ function loadProdCarrito(){
                                 </div>
                                 <div class="cardProdPrecio">
                                     <small>Precio</small>
-                                    <p>${producto.precio}</p>
+                                    <p>$${producto.precio},00</p>
                                 </div>
                                 <div>
                                     <small>Subtotal</small>
-                                    <p>$${producto.precio * producto.cantidad}</p>
+                                    <p>$${producto.precio * producto.cantidad},00</p>
                                 </div>
                                 <button class="cardEliminarCarrito" id="${producto._id}"><i class="bi bi-trash3"></i></button>              
                                 `;

@@ -14,7 +14,7 @@ main{
     border: solid rgba(0, 0, 0, 0.39);
     border-radius: 1rem;
     padding: 1rem;
-    width: 70rem;
+    width: 60rem;
     margin: auto;
     margin-top: 6rem;
     gap: 1rem;   
@@ -28,6 +28,9 @@ main{
     height: 3rem;
     width: 100%;
     text-align: center;
+    margin-top: 2px;
+    border: 1px solid rgba(66, 65, 65, 0.63);
+    align-content: center;
 }
 
 .opcion{
@@ -42,8 +45,8 @@ main{
 }
 
 .btnSiguiente{
-    background-color: var(--clr-btnAgregar);
-    border: solid 1px whitesmoke; 
+    background-color: skyblue;
+    border: solid 2px rgba(128, 128, 128, 0.425); 
     color: var(--clr-principal);
     align-items: center;
     cursor: pointer;
@@ -54,8 +57,7 @@ main{
 }
 
 .btnSiguiente:hover{
-    background-color: var(--clr-verde);
-    color: var(--clr-claro); 
+    background-color: rgb(84, 169, 202);
 }
 
 .btnVolver{
@@ -70,8 +72,6 @@ main{
 .btnVolver:hover{
     background-color: var(--clr-principal);
 }
-
-/* ---- datos envio ---- */
 
 .datosEnvio{
     display: flex;

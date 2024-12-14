@@ -18,6 +18,18 @@ aside{
 	justify-content: space-between;
 }
 
+.print{
+	border: 0;
+    background-color: transparent;
+    color: var(--clr-red);
+    font-size: x-large;
+}
+
+.print:hover{
+    color: green;
+    cursor: pointer;
+ }
+
 .send{
 	border: 0;
     background-color: transparent;
@@ -58,7 +70,7 @@ aside{
 }
 
 .btnCard{
-    background-color: var(--clr-btnAgregar);
+    background-color: skyblue;
     margin-top: 20px;
     border-radius: 1rem;
     color: black;
@@ -70,7 +82,7 @@ aside{
     padding: 1rem;
     margin-top: 1rem;
     font-size: x-large;
-    color: var(--clr-claro);
+    color: var(--clr-principal);
 
 }
 

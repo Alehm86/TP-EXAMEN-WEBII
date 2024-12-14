@@ -8,52 +8,87 @@
     <title>Login</title>
 </head>
 <body>
-
-    <div class="login-fondo">
-        <img src="./public/img/note.webp" alt="" class="img">
-        <img src="./public/img/cel.webp" alt="" class="img">
-        <img src="./public/img/comp.webp" alt="" class="img">
-
-    </div>
-    
-    <div class="login">
-        
+    <header>
         <h1 class="login-logo"> CBATECH! </h1>
+        <br>
 
-        <form class="login-form" id="login">
-
-            <h1 class="login-titulo">Login</h1>
-            <div class="login-contenido">
-                    
-                <div class="login-boxInput">
-                    <label for="login-email" class="login-label">Email <i class="bi bi-person"></i></label>
-                    <input type="email" class="login-input" id="email" placeholder="" required>
-                </div>
-
-                <div class="login-box">
-                    
-                    <div class="login-boxInput">
-                        <label for="login-pass" class="login-label">Contraseña <i class="bi bi-key"></i></label>
-                        <input type="password" class="login-input" id="pass" placeholder="" required>
-                        <div id="alert_container"></div>
-                    </div>
-
-                </div> 
-                <div class="login-check">
-
-                    <div class="login-checkGroup">
-                        <input type="checkbox" class="login-checkInput" id="login-check">
-                        <label for="login-check" class="login-checkLabel">Recordar</label>
-                    </div>
-
-                </div>
+    </header>
+    <div class="lbody">
+       
+        <div class="login">
+            <div class="dataLogin">
+                <h5 style="font-size: large; color: goldenrod;">Tu tienda online de tecnología e informática, siempre a un clic de distancia.</h5>
+                <br>
+                <P style="color: gold;">Sobre nosotros:</p>  
+                <P>En CBATECH, nos apasiona la tecnología. Por eso, hemos creado una plataforma donde encontrarás lo mejor en informática. Somos tu aliado digital para equiparte con las herramientas que necesitas para trabajar, aprender y disfrutar de tus pasatiempos tecnológicos.</p>
+                <br>
+                <p style="color: gold;">¿Qué ofrecemos?</p>
+                <P>🖥️ Tecnología de vanguardia</P>   
+                    <p>Explora nuestra selección de productos cuidadosamente elegidos para satisfacer todas tus necesidades:</p>
+                        <p>Computadoras y laptops: Equipos para gamers, estudiantes y profesionales.</p>
+                        <p>Accesorios tecnológicos: Monitores, teclados, ratones, audífonos y más.</p>
+                        <p>Gadgets y dispositivos inteligentes: Tablets, smartphones, smartwatches y tecnología para el hogar.</p>
+                        <p>Componentes para PC: Procesadores, tarjetas gráficas, memoria RAM, discos duros, entre otros.</p>                          
+                <br>                           
+                <P style="color: gold;">Categorías destacadas</P>
+                <p>
+                    🎮 Tecnología para gamers
+                    PCs, monitores, sillas gamer y más para llevar tu experiencia al siguiente nivel.
+                </P>
+                <P>
+                    🏢 Soluciones empresariales
+                    Equipos y software diseñados para optimizar tu productividad.
+                </P>
+                <P>
+                    🎁 Gadgets y regalos tecnológicos: 
+                    Encuentra el regalo perfecto para los amantes de la tecnología.             
+                </P>
+                <br>
+                <p style="color: gold;">Promociones y ofertas especiales</p>            
+                <P>💥 Semana Tecnológica: ¡Hasta un 50% de descuento en productos seleccionados!</P>
+                <p>🎁 Envío gratis en pedidos superiores a $150.000,00.</p>   
+                <P>📱 Síguenos en redes sociales: https://www.instagram.com/cbatech</P>
+                <p>📧 Contáctanos: cbatech@infocbatech.com</p>                   
+                <br>
+                <P style="color: gold;">La tecnología del mañana, disponible hoy. ¡Explora nuestro catálogo y equipa tu vida!</p>
             </div>
+    
+            
+        </div>
 
-            <button type="" class="btnLogin" id="btnLogin">Login</button>
+        <div class="mk1">
+          
+            <div class="login">
+                <form class="login-form" id="login">
 
-            <p class="login-registro">¿No tienes cuenta? <a href="http://localhost:3006/public/registro.html" class="registrar">Registrar</a></p>          
-
-        </form>
+                    <h1 class="login-titulo">Login</h1>
+                    <div class="login-contenido">
+                            
+                        <div class="login-boxInput">
+                            <label for="login-email" class="login-label">Email <i class="bi bi-person"></i></label>
+                            <input type="email" class="login-input" id="email" placeholder="" required>
+                        </div>
+        
+                        <div class="login-box">
+                            
+                            <div class="login-boxInput">
+                                <label for="login-pass" class="login-label">Contraseña <i class="bi bi-key"></i></label>
+                                <input type="password" class="login-input" id="pass" placeholder="" required>
+                                <div id="alert_container"></div>
+                            </div>
+        
+                        </div> 
+                        
+                    </div>
+        
+                    <button type="" class="btnLogin" id="btnLogin">Login</button>
+        
+                    <p class="login-registro">¿No tienes cuenta? <a href="http://localhost:3006/public/registro.html" class="registrar">Registrar</a></p>          
+        
+                </form>
+            </div>
+            
+        </div>
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

@@ -81,7 +81,7 @@ btnNewProduct.addEventListener('click', async(e)=>{
     if(res.status = true){  
         try{
             
-            window.location.href = `${API}/private/admin/html/message.html`
+            window.location.href = `${API}/private/admin/pages/message.html`
             
         }catch(error){
             console.log('Error al cargar pagina!')

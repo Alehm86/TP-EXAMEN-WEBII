@@ -5,7 +5,7 @@ import { findSalesByStatus, updateStatus } from "../../../api/sales.api.js";
 const data = await getProduct()
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const array = data
-const lastFiveProduct = array.slice(-5).reverse();
+const lastFiveProduct = array.slice(-10).reverse();
 const containerSales = document.querySelector("#containerSales");
 const dataSales = await findSalesByStatus("preparing");
 
@@ -59,7 +59,7 @@ function loadSalesPreparing(regSales){
                                     <h6>datos envio <i class="bi bi-printer"></i></h6>
                                     
                                     <a href="${API}/private/admin/pages/printArea.html">
-                                        <button class="print send" id="${dates._id}"><i class="bi bi-file-pdf-fill"></i></button>
+                                        <button class="print" id="${dates._id}"><i class="bi bi-file-pdf-fill"></i></button>
                                     </a>
                                 </div>
                                 <div>
@@ -100,7 +100,7 @@ async function send(e){
     const status = 'Terminado'
     const dates = {_id, status}
 
-    const isConfirmed = confirm("¿Enviar el pedido?");
+    const isConfirmed = confirm("¿Estás seguro de que deseas terminar la compra?");
     if (!isConfirmed) {
         return;
     }

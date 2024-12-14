@@ -10,7 +10,7 @@ function loadTotal(){
         div.classList.add("contenedorCuota");    
         div.innerHTML = `   
                                                            
-                            <h2 class="montoPagar">Total a pagar: $${total.total}</h2>                 
+                            <h2 class="montoPagar">Total a pagar: $${total.total},00</h2>                 
                             <div class="filaOpc">
                                 <div>
                                     <input type="radio" id="1" name="cuotas" value="${total.total}"/>
