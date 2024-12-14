@@ -69,4 +69,52 @@
   "pass": "$2a$08$zqYp0cAshHnYjboA80PfOeH5noLUQCaenaLp1nMarE0aT33huMkk6",
   "__v": 0,
   "user": "standard"
+},
+{
+  "_id": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "name": "Héctor",
+  "lastname": "Zalamanca",
+  "username": "hectorZala123",
+  "email": "hectorzalamanca@gmail.com",
+  "pass": "$2a$08$5Z6Ybe4XPVLvRcjbFKX9ou65WEL4en..0r.4j/SQdtbQk/nY1sU6G",
+  "typeUser": "standard",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d0394888dc1965698fe9f"
+  },
+  "name": "Brus",
+  "lastname": "Waine",
+  "username": "batman86",
+  "email": "batman@gmail.com",
+  "pass": "$2a$08$zzcfJwS3uJRVN2Sauw9xh.xz8hYX9o2KvAZbdUiGyLH57jiVJHxhy",
+  "typeUser": "standard",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9ca254a3882828153f2b"
+  },
+  "name": "jHON",
+  "lastname": "Snow",
+  "username": "jhonSnow123",
+  "email": "JhonSnow@gmail.com",
+  "pass": "$2a$08$SC3TKlELZ6.G1Ag9frI.7OLqmtNcVTFcWULSPJsbdBB46iImGTbv.",
+  "typeUser": "standard",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9f3b06773724a517cb8f"
+  },
+  "name": "Han",
+  "lastname": "Solo",
+  "username": "hansolo8",
+  "email": "hansolo@gmail.com",
+  "pass": "$2a$08$E9eoqMbFnRoc8UmmHmi79ufcW1KORzYoOmuRAKL2ejTQMkqTHSChi",
+  "typeUser": "standard",
+  "__v": 0
 }]

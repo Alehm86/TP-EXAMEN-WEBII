@@ -269,4 +269,81 @@
   "category": "Notebook",
   "precio": 2600000,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675b894f0aa47044cf97e87d"
+  },
+  "marca": "Apple",
+  "espec": "Iphone16 - 8GB RAM - 256GB",
+  "imagen": "../../img/cel9.webp",
+  "category": "Celulares",
+  "precio": 1700000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675b89a7e96f29f8738cedcd"
+  },
+  "marca": "MSI",
+  "espec": "GAB MSI VAMPIRIC 010",
+  "imagen": "../../img/comp16.webp",
+  "category": "Componentes",
+  "precio": 95000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675b8a4ce96f29f8738cedd6"
+  },
+  "marca": "PERFORMANCE",
+  "espec": "GAB KIT 01 TEC+MOUSE+PARL",
+  "imagen": "../../img/comp15.webp",
+  "category": "Componentes",
+  "precio": 45000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675b8ab2e96f29f8738ceddb"
+  },
+  "marca": "ASUS",
+  "espec": "RTX 3070 OC 8GB",
+  "imagen": "../../img/comp14.webp",
+  "category": "Componentes",
+  "precio": 650000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675c902f5bbc88e71a0c81f1"
+  },
+  "marca": "Lenovo",
+  "espec": "Tablet 10\" 8GB - ALM 256GB ",
+  "imagen": "../../img/tab1.webp",
+  "category": "Celulares",
+  "precio": 650000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d05c2e743ff9406b19dfe"
+  },
+  "marca": "Samsung",
+  "espec": "Mod Tab2 8Gb - alm 128gb",
+  "imagen": "../../img/tab2.webp",
+  "category": "Celulares",
+  "precio": 500000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675da05b06773724a517cbac"
+  },
+  "marca": "gigabyte",
+  "espec": "rtx4080 16GB",
+  "imagen": "../../img/comp13.webp",
+  "category": "Componentes",
+  "precio": 1400000,
+  "__v": 0
 }]

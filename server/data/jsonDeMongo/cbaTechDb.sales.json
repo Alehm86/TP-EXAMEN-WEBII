@@ -2,128 +2,199 @@
   "_id": {
     "$oid": "6733adacf1fa0f075b2a191d"
   },
-  "fecha": "8/10/2024",
-  "id_cliente": 1,
+  "fecha": "10/08/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
   "total": 314000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 8,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a191e"
   },
-  "fecha": "8/10/2024",
-  "id_cliente": 18,
+  "fecha": "10/08/2024",
+  "id_cliente": "672d5d94e3d8f882cfa468f5",
   "total": 1250000,
-  "metodo_pago": 4
+  "metodo_pago": 4,
+  "mes": 8,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc3"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a191f"
   },
-  "fecha": "8/15/2024",
-  "id_cliente": 11,
+  "fecha": "15/08/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
   "total": 2780000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 8,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc4"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1920"
   },
-  "fecha": "8/18/2024",
-  "id_cliente": 6,
+  "fecha": "18/09/2024",
+  "id_cliente": "672e6743fed187ec756da9d1",
   "total": 170000,
-  "metodo_pago": 3
+  "metodo_pago": 3,
+  "mes": 9,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc5"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1921"
   },
-  "fecha": "8/31/2024",
-  "id_cliente": 19,
+  "fecha": "31/09/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
   "total": 1415000,
-  "metodo_pago": 1
+  "metodo_pago": 1,
+  "mes": 9,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1922"
   },
-  "fecha": "10/4/2024",
-  "id_cliente": 18,
+  "fecha": "04/10/2024",
+  "id_cliente": "673512d7a55d4663dea29318",
   "total": 111000,
-  "metodo_pago": 1
+  "metodo_pago": 1,
+  "mes": 10,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc6"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1923"
   },
-  "fecha": "10/4/2024",
-  "id_cliente": 11,
+  "fecha": "04/10/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
   "total": 151000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 10,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1924"
   },
-  "fecha": "10/23/2024",
-  "id_cliente": 1,
+  "fecha": "23/10/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
   "total": 60000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 10,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1925"
   },
-  "fecha": "10/23/2024",
-  "total": "620000",
-  "metodo_pago": 2
+  "fecha": "23/10/2024",
+  "total": 620000,
+  "metodo_pago": 2,
+  "mes": 10,
+  "status": "Terminado",
+  "id_cliente": "672e6743fed187ec756da9d1",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc5"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1926"
   },
-  "fecha": "10/31/2024",
-  "id_cliente": 3,
+  "fecha": "31/10/2024",
+  "id_cliente": "673512d7a55d4663dea29318",
   "total": 1625000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 10,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc6"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1927"
   },
-  "fecha": "10/31/2024",
-  "id_cliente": 3,
+  "fecha": "31/10/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
   "total": 545100,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 10,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc4"
+  }
 },
 {
   "_id": {
     "$oid": "6733adacf1fa0f075b2a1928"
   },
-  "fecha": "11/12/2024",
-  "id_cliente": 3,
+  "fecha": "12/11/2024",
+  "id_cliente": "672d5c35e3d8f882cfa468f1",
   "total": 1380000,
-  "metodo_pago": 2
+  "metodo_pago": 2,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
     "$oid": "6733afd4b9d1f82df68cc449"
   },
-  "fecha": "11/12/2024",
-  "id_cliente": "3",
-  "total": "1274000",
-  "metodo_pago": "2",
-  "__v": 0
+  "fecha": "12/11/2024",
+  "id_cliente": "672e6743fed187ec756da9d1",
+  "total": 1274000,
+  "metodo_pago": 2,
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc5"
+  }
 },
 {
   "_id": {
     "$oid": "673514e795c9879e38a7ad4a"
   },
-  "fecha": "11/13/2024",
+  "fecha": "13/11/2024",
   "id_cliente": "6735145995c9879e38a7ad45",
   "total": 1403000,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc8"
+  }
 },
 {
   "_id": {
@@ -133,7 +204,12 @@
   "id_cliente": "672d5d94e3d8f882cfa468f5",
   "total": 1916200,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  }
 },
 {
   "_id": {
@@ -143,7 +219,12 @@
   "id_cliente": "672d5d94e3d8f882cfa468f5",
   "total": 770000,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc3"
+  }
 },
 {
   "_id": {
@@ -153,7 +234,12 @@
   "id_cliente": "672d5d94e3d8f882cfa468f5",
   "total": 690000,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc3"
+  }
 },
 {
   "_id": {
@@ -163,7 +249,12 @@
   "id_cliente": "672d5d94e3d8f882cfa468f5",
   "total": 780000,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc3"
+  }
 },
 {
   "_id": {
@@ -173,15 +264,108 @@
   "id_cliente": "6735145995c9879e38a7ad45",
   "total": 1456000,
   "metodo_pago": "2",
-  "__v": 0
+  "__v": 0,
+  "mes": 11,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc7"
+  }
 },
 {
   "_id": {
     "$oid": "673b6ad4837cae3a0861c702"
   },
   "fecha": "18/11/2024",
-  "id_cliente": "6735145995c9879e38a7ad45",
+  "id_cliente": "672e6743fed187ec756da9d1",
   "total": 949000,
   "metodo_pago": "2",
+  "__v": 0,
+  "mes": 11,
+  "status": "preparing",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc5"
+  }
+},
+{
+  "_id": {
+    "$oid": "6744c34ecb14301d9f4e0426"
+  },
+  "fecha": "25/11/2024",
+  "id_cliente": "672d6349ed621f48aea3ac7b",
+  "mes": 11,
+  "total": 169000,
+  "metodo_pago": "2",
+  "__v": 0,
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc4"
+  }
+},
+{
+  "_id": {
+    "$oid": "6757ad3f12a9d9e8316fcf41"
+  },
+  "fecha": "9/12/2024",
+  "id_cliente": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "mes": 12,
+  "total": 385000,
+  "metodo_pago": "2",
+  "status": "preparing",
+  "id_Address": {
+    "$oid": "67535d81e11e90aa80b70fc1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675c945d5bbc88e71a0c820c"
+  },
+  "fecha": "13/12/2024",
+  "id_cliente": {
+    "$oid": "6735145995c9879e38a7ad45"
+  },
+  "mes": 12,
+  "total": 545000,
+  "metodo_pago": "2",
+  "status": "preparing",
+  "id_Address": {
+    "$oid": "6759d71b950a29f79ef9e9b6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d0548e743ff9406b19df6"
+  },
+  "fecha": "14/12/2024",
+  "id_cliente": {
+    "$oid": "675d0394888dc1965698fe9f"
+  },
+  "mes": 12,
+  "total": 2242500,
+  "metodo_pago": "2",
+  "status": "preparing",
+  "id_Address": {
+    "$oid": "675d03c2888dc1965698fea2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675da00f06773724a517cba5"
+  },
+  "fecha": "14/12/2024",
+  "id_cliente": {
+    "$oid": "675d9f3b06773724a517cb8f"
+  },
+  "mes": 12,
+  "total": 2295000,
+  "metodo_pago": "2",
+  "status": "Terminado",
+  "id_Address": {
+    "$oid": "675d9f5606773724a517cb92"
+  },
   "__v": 0
 }]

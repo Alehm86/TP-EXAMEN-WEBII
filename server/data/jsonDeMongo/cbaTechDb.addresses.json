@@ -1,0 +1,260 @@
+[{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc1"
+  },
+  "id_client": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "address": "Hipolito Yrigoyen",
+  "height": 362,
+  "locality": "Dean Funes",
+  "postal": 5244,
+  "province": "Córdoba",
+  "__v": 0,
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc2"
+  },
+  "id_client": {
+    "$oid": "672d5c35e3d8f882cfa468f1"
+  },
+  "address": "San Martín",
+  "height": 123,
+  "locality": "Carlos Paz",
+  "postal": 5152,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc3"
+  },
+  "id_client": {
+    "$oid": "672d5d94e3d8f882cfa468f5"
+  },
+  "address": "Belgrano",
+  "height": 456,
+  "locality": "Alta Gracia",
+  "postal": 5186,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc4"
+  },
+  "id_client": {
+    "$oid": "672d6349ed621f48aea3ac7b"
+  },
+  "address": "Rivadavia",
+  "height": 789,
+  "locality": "Villa María",
+  "postal": 5900,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc5"
+  },
+  "id_client": {
+    "$oid": "672e6743fed187ec756da9d1"
+  },
+  "address": "Mitre",
+  "height": 101,
+  "locality": "San Francisco",
+  "postal": 2400,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc6"
+  },
+  "id_client": {
+    "$oid": "673512d7a55d4663dea29318"
+  },
+  "address": "Sarmiento",
+  "height": 202,
+  "locality": "Río Cuarto",
+  "postal": 5800,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc7"
+  },
+  "id_client": {
+    "$oid": "6735145995c9879e38a7ad45"
+  },
+  "address": "Alem",
+  "height": 303,
+  "locality": "Cosquín",
+  "postal": 5166,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc8"
+  },
+  "id_client": {
+    "$oid": "6735145995c9879e38a7ad45"
+  },
+  "address": "Las Heras",
+  "height": 404,
+  "locality": "Jesús María",
+  "postal": 5220,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fc9"
+  },
+  "id_client": {
+    "$oid": "67535a6c260370fe3bd48314"
+  },
+  "address": "Entre Ríos",
+  "height": 505,
+  "locality": "Villa Carlos Paz",
+  "postal": 5152,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fca"
+  },
+  "id_client": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "address": "Jujuy",
+  "height": 606,
+  "locality": "Capilla del Monte",
+  "postal": 5184,
+  "province": "Córdoba",
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "67535d81e11e90aa80b70fcb"
+  },
+  "id_client": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "address": "Buenos Aires",
+  "height": 707,
+  "locality": "La Falda",
+  "postal": 5172,
+  "province": "Córdoba",
+  "status": "disabled"
+},
+{
+  "_id": {
+    "$oid": "6759d71b950a29f79ef9e9b6"
+  },
+  "id_client": {
+    "$oid": "6735145995c9879e38a7ad45"
+  },
+  "address": "Los inmigrantes",
+  "height": 7845,
+  "locality": "Rosario",
+  "postal": 5223,
+  "province": "Santa Fe",
+  "__v": 0,
+  "status": "enabled"
+},
+{
+  "_id": {
+    "$oid": "675a4852861bd4a5ff7933eb"
+  },
+  "id_client": {
+    "$oid": "67535a6c260370fe3bd48306"
+  },
+  "address": "ESPAÑA",
+  "height": 550,
+  "locality": "ojo de agua",
+  "postal": 4564,
+  "province": "SANTIAGO DEL ESTERO",
+  "__v": 0,
+  "status": "disabled"
+},
+{
+  "_id": {
+    "$oid": "675d03c2888dc1965698fea2"
+  },
+  "id_client": {
+    "$oid": "675d0394888dc1965698fe9f"
+  },
+  "address": "mansion Waine",
+  "height": 111,
+  "locality": "ciudad gotica",
+  "postal": 4567,
+  "province": "dc",
+  "status": "enabled",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d04c7e743ff9406b19dea"
+  },
+  "id_client": {
+    "$oid": "675d0394888dc1965698fe9f"
+  },
+  "address": "los cocos",
+  "height": 123,
+  "locality": "los cocos",
+  "postal": 1213,
+  "province": "Cordoba",
+  "status": "disabled",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9d1606773724a517cb87"
+  },
+  "id_client": {
+    "$oid": "675d9ca254a3882828153f2b"
+  },
+  "address": "invernali",
+  "height": 123,
+  "locality": "7 reinos",
+  "postal": 1111,
+  "province": "westeros",
+  "status": "enabled",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9f5606773724a517cb92"
+  },
+  "id_client": {
+    "$oid": "675d9f3b06773724a517cb8f"
+  },
+  "address": "halcón milenario",
+  "height": 111,
+  "locality": "corelia",
+  "postal": 4545,
+  "province": "Republica",
+  "status": "enabled",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9fc406773724a517cb9c"
+  },
+  "id_client": {
+    "$oid": "675d9f3b06773724a517cb8f"
+  },
+  "address": "san martin",
+  "height": 1111,
+  "locality": "cordoba",
+  "postal": 5555,
+  "province": "la rioja",
+  "status": "disabled",
+  "__v": 0
+}]
